@@ -1,0 +1,156 @@
+{
+  "dev": {
+    "host": "https://odata.easefica.co.za",
+    "serviceName": "OData v4 Core Services Development",
+    "port": 4601,
+    "uploads": {
+      "path": "/home/craig/Data/mnt/easefica_docs",
+      "maxFileSize": 10000000,
+      "maxFiles": 1
+    },
+    "cors": {
+      "origin": true,
+      "credentials": true,
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE",
+        "OPTIONS",
+        "PATCH"
+      ],
+      "allowedHeaders": [
+        "Authorization",
+        "Content-Type",
+        "Accept",
+        "Origin",
+        "X-Requested-With",
+        "Access-Control-Allow-Origin",
+        "Access-Control-Allow-Headers",
+        "Access-Control-Allow-Methods",
+        "apikey"
+      ]
+    },
+    "mongoEnabled": true,
+    "redis": {
+      "host": "rediss://default:DFf8CYObHXBtKg2B@db-redis-ams3-24755-do-user-7185516-0.b.db.ondigitalocean.com:25061"
+    },
+    "email": {
+      "defaultTransport": "remedial",
+      "allowUnverified": true,
+      "transports": {
+        "remedial": {
+          "host": "mail.easefica.co.za",
+          "port": 465,
+          "secure": true,
+          "auth": {
+            "user": "remedialactions@easefica.co.za",
+            "pass": "t?hFPcZz)-J2{^o9"
+          }
+        },
+        "contact": {
+          "host": "mail.easefica.co.za",
+          "port": 465,
+          "secure": true,
+          "auth": {
+            "user": "contactus@easefica.co.za",
+            "pass": "V[~_Or72FOGf"
+          }
+        }
+      }
+    },
+    "mongo": {
+      "host": "mongodb://admin:sCr33N1ng@screen.easefica.co.za:27017/?authSource=admin"
+    },
+    "debug": true,
+    "debugVerbose": true,
+    "enableAPIKey": true,
+    "adminAPIKeys": [
+      "cxdeg6zcsCxM6qmWmF6rp3cHF6ZBr8UwCz6UkDf78dcdMA9PMHm",
+      "vaPqs5kzzp8Z25WnhrdHdWUN3KftdRfrDqP9ftZdg2ku3MPYvac",
+      "h9hyRhe9ZZqa7xPNmenmHhaWd2C78DE3FMa3Qutc2wsJuMMJkPf"
+    ],
+    "whitelistCollections": [
+      "Documents",
+      "Sanctions",
+      "SanctionList"
+    ]
+  },
+  "production": {
+    "host": "https://odata.easefica.co.za",
+    "serviceName": "OData v4 Core Services",
+    "port": 4601,
+    "uploads": {
+      "path": "/mnt/easefica_docs",
+      "maxFileSize": 10000000,
+      "maxFiles": 1
+    },
+    "cors": {
+      "origin": true,
+      "credentials": true,
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE",
+        "OPTIONS",
+        "PATCH"
+      ],
+      "allowedHeaders": [
+        "Authorization",
+        "Content-Type",
+        "Accept",
+        "Origin",
+        "X-Requested-With",
+        "Access-Control-Allow-Origin",
+        "Access-Control-Allow-Headers",
+        "Access-Control-Allow-Methods",
+        "apikey"
+      ]
+    },
+    "mongoEnabled": true,
+    "redis": {
+      "host": "rediss://default:DFf8CYObHXBtKg2B@db-redis-ams3-24755-do-user-7185516-0.b.db.ondigitalocean.com:25061"
+    },
+    "email": {
+      "defaultTransport": "remedial",
+      "allowUnverified": true,
+      "transports": {
+        "remedial": {
+          "host": "mail.easefica.co.za",
+          "port": 465,
+          "secure": true,
+          "auth": {
+            "user": "remedialactions@easefica.co.za",
+            "pass": "pSggkj0B0$o+"
+          }
+        },
+        "contact": {
+          "host": "mail.easefica.co.za",
+          "port": 465,
+          "secure": true,
+          "auth": {
+            "user": "contactus@easefica.co.za",
+            "pass": "V[~_Or72FOGf"
+          }
+        }
+      }
+    },
+    "mongo": {
+      "host": "mongodb://admin:sCr33N1ng@screen.easefica.co.za:27017/?authSource=admin"
+    },
+    "debug": true,
+    "debugVerbose": true,
+    "enableAPIKey": true,
+    "adminAPIKeys": [
+      "cxdeg6zcsCxM6qmWmF6rp3cHF6ZBr8UwCz6UkDf78dcdMA9PMHm",
+      "vaPqs5kzzp8Z25WnhrdHdWUN3KftdRfrDqP9ftZdg2ku3MPYvac",
+      "h9hyRhe9ZZqa7xPNmenmHhaWd2C78DE3FMa3Qutc2wsJuMMJkPf"
+    ],
+    "whitelistCollections": [
+      "Documents",
+      "Sanctions",
+      "SanctionList"
+    ]
+  }
+}
