@@ -76,7 +76,7 @@ let main = async () => {
 
         mongoClient.close();
         parentPort.postMessage({ id: workerData.aiId, message: 'db closed.' });
-        console.log("Results that are being sent to the parent", results);
+        // console.log("Results that are being sent to the parent", results);
         await redisClient.quit();
         parentPort.postMessage({ id: workerData.aiId, batchNumber: workerData.batchNumber, totalBatches: workerData.totalBatches, message: 'thread ending.', end: true, results: results, lists: workerData.options.sources });
     });

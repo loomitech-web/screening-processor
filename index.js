@@ -112,6 +112,93 @@ let results = {
 
 }
 
+let createScreeningResult = async (allResults, filteredResults, data) => {
+    let screeningResultRecord;
+    for (let result of filteredResults) {
+        screeningResultRecord = {
+            aiId: data.id,
+            timestamp: new Date().getTime(),
+            selectedLists: data.lists,
+            totalDataSubjects: allResults.length,
+            subjectsWithMatches: filteredResults.length,
+            totalMatches: result.totalMatches,
+        }
+    }
+    return screeningResultRecord;
+}
+
+let createScreeningMatches = async (filteredResults, screeningResultId, screeningResultTimestamp, data) => {
+    let matchResultRecords = [];
+    for (let result of filteredResults) {
+        let matchResultRecord = {
+            screeningId: screeningResultId,
+            aiId: data.id,
+            dataSubject: result.dataSubject,
+            matchCount: result.totalMatches,
+            lists: data.lists,
+            createdAt: screeningResultTimestamp,
+            matchDetails: result.matches.map(match => ({
+                reference: match.entry.reference,
+                source: match.entry.source,
+                matchedName: match.matchResult.bestMatchName,
+                designation: match.entry.designation,
+                country: match.entry.country,
+                matchedAttributes:[ {
+                    percentageAchieved: match.matchResult.match,
+                    bestMatchName: match.matchResult.bestMatchName,
+                    details: match.matchResult.details
+                }]
+            }))
+        }
+        matchResultRecords.push(matchResultRecord);
+    }
+    return matchResultRecords;
+}
+
+let createMicrotransactionRecord = async(aiId, results, screeningResultTimestamp) => {
+    let institution = await req.db.collection("Institution").findOne({ easeficaId: aiId });
+    let microtransactionRecord = {
+        data: {
+            regName: institution.name,
+            totalProcessed: results.length,
+        }, 
+        aiId: aiId,
+        type: "ScreeningOnly",
+        created: screeningResultTimestamp,
+    }
+    return microtransactionRecord;
+}
+
+let saveScreeningResult = async (screeningResultRecord) => {
+    try {
+        let screeningResult = await req.db.collection("ScreeningResult").insertOne(screeningResultRecord);
+        return {id: screeningResult.insertedId.toHexString(), timestamp: screeningResultRecord.timestamp};
+    } catch (error) {
+        console.error("Error saving screening result", error);
+        return null;
+    }
+}
+
+let saveMatchResults = async (matchResultRecords) => {
+    try {
+        let matchResults = await req.db.collection("ScreeningMatch").insertMany(matchResultRecords);
+        return matchResults.insertedIds;
+    } catch (error) {
+        console.error("Error saving match result", error);
+        return [];
+    }
+}
+
+let saveMicrotransaction = async (microtransactionRecord) => {
+    try {
+        let microtransaction = await req.db.collection("MicroTransactions").insertOne(microtransactionRecord);
+        return microtransaction.insertedId.toHexString();
+    } catch (error) {
+        console.error("Error saving microtransaction", error);
+        return null;
+    }
+}
+
 let startTime = performance.now();
 
 // TODO use this to track old vs new data subject for the day
@@ -127,7 +214,7 @@ let createWorker = async (data) => {
         workerData: data
     });
 
-    worker.on('message', (data) => {
+    worker.on('message', async(data) => {
         if (data && data.end) {
             activeThreadCount--;
             if (!results[data.id]) {
@@ -140,43 +227,23 @@ let createWorker = async (data) => {
                 console.log('AI Complete', performance.now() - startTime);
                 // TODO accumulate results and save to database
 
-                // ==== Screening Results ====
-                // aiId
-                // screeningId 
-                // timestamp 
-                // selectedLists 
-                // totalDataSubjects 
-                // subjectsWithMatches 
-                // totalMatches 
-                
-
-                // ==== Match Results ====
                 let allResults = results[data.id].batchResults.flatMap(batch => batch.results);
                 let filteredResults = allResults.filter(result => result.totalMatches > 0); 
-                let matchResultRecords = [];
-                for (let result of filteredResults) {
-                    let matchResultRecord = {
-                        screeningId: result.screeningID,
-                        aiId: data.id,
-                        dataSubject: result.dataSubject,
-                        matchCount: result.totalMatches,
-                        lists: data.lists,
-                        matchDetails: result.matches.map(match => ({
-                            reference: match.entry.reference,
-                            source: match.entry.source,
-                            matchedName: match.matchResult.bestMatchName,
-                            designation: match.entry.designation,
-                            country: match.entry.country,
-                            matchedAttributes: {
-                                percentageAchieved: match.matchResult.match,
-                                bestMatchName: match.matchResult.bestMatchName,
-                                details: match.matchResult.details
-                            }
-                        }))
-                    }
-                    matchResultRecords.push(matchResultRecord);
-                }
-                console.log("Match result records", matchResultRecords);
+
+                // Create & savescreening result record
+                let screeningResultRecord = await createScreeningResult(allResults, filteredResults, data);
+                let {id: screeningResultId, timestamp: screeningResultTimestamp} = await saveScreeningResult(screeningResultRecord);
+
+                // Create & save match result records
+                let matchResultRecords = await createScreeningMatches(filteredResults, screeningResultId, screeningResultTimestamp, data);
+                await saveMatchResults(matchResultRecords);
+
+                // Create & save Microtransaction record
+                let microtransactionRecord = await createMicrotransactionRecord(data.id, allResults, screeningResultTimestamp);
+                await saveMicrotransaction(microtransactionRecord);
+
+                // Update last scan time for all data subjects 
+                await setLastScanTime(data.id, screeningResultTimestamp);
             }
         } else {
             console.log(data);
