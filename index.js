@@ -211,7 +211,7 @@ let startTime = performance.now();
 
 // TODO use this to track old vs new data subject for the day
 let setLastScanTime = async (aiId, timestamp) => {
-    await req.db.collection("DataSubject").updateMany({ aiId: aiId }, { $set: { lastScanTime: timestamp } });
+    await req.db.collection("DataSubject").updateMany({ aiId: aiId, isActive: true }, { $set: { lastScanTime: timestamp } });
 }
 
 let createWorker = async (data) => {
