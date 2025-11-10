@@ -6,6 +6,7 @@ import { MongoClient, ObjectId } from 'mongodb';
 import { performance } from 'perf_hooks';
 import Redis from 'ioredis';
 import SanctionListManager from './SanctionListManager.js'
+import cron from 'node-cron';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -42,7 +43,8 @@ let getEnabledInstitutions = async () => {
         const institutions = await req.db
             .collection("Institution")
             .find({
-                easeficaId: "5c0e158a033899600f3257e3"
+                isScreening: true, 
+                easeficaId: { $ne: "63ff6046aea3ec7785c4ecdc"}
             })
             .toArray();
 
@@ -113,16 +115,18 @@ let results = {
 }
 
 let createScreeningResult = async (allResults, filteredResults, data) => {
-    let screeningResultRecord;
-    for (let result of filteredResults) {
-        screeningResultRecord = {
-            aiId: data.id,
-            timestamp: new Date().getTime(),
-            selectedLists: data.lists,
-            totalDataSubjects: allResults.length,
-            subjectsWithMatches: filteredResults.length,
-            totalMatches: result.totalMatches,
-        }
+    let screeningResultRecord = {
+        aiId: data.id,
+        timestamp: new Date().getTime(),
+        selectedLists: data.lists,
+        totalDataSubjects: allResults.length,
+        subjectsWithMatches: filteredResults.length,
+        totalMatches: 0, 
+    };
+    
+    // If there are filtered results, update totalMatches with the last result's value
+    if (filteredResults.length > 0) {
+        screeningResultRecord.totalMatches = filteredResults[filteredResults.length - 1].totalMatches;
     }
     return screeningResultRecord;
 }
@@ -224,9 +228,7 @@ let createWorker = async (data) => {
             results[data.id].batchResults.push(data);
 
             if (results[data.id].batchResults.length == data.totalBatches) {
-                console.log('AI Complete', performance.now() - startTime);
-                // TODO accumulate results and save to database
-
+                console.log(`AI ${data.id} Complete`, performance.now() - startTime);
                 let allResults = results[data.id].batchResults.flatMap(batch => batch.results);
                 let filteredResults = allResults.filter(result => result.totalMatches > 0); 
 
@@ -234,9 +236,11 @@ let createWorker = async (data) => {
                 let screeningResultRecord = await createScreeningResult(allResults, filteredResults, data);
                 let {id: screeningResultId, timestamp: screeningResultTimestamp} = await saveScreeningResult(screeningResultRecord);
 
-                // Create & save match result records
-                let matchResultRecords = await createScreeningMatches(filteredResults, screeningResultId, screeningResultTimestamp, data);
-                await saveMatchResults(matchResultRecords);
+                // Create & save match result records if there are any matches
+                if (filteredResults.length > 0) {
+                    let matchResultRecords = await createScreeningMatches(filteredResults, screeningResultId, screeningResultTimestamp, data);
+                    await saveMatchResults(matchResultRecords);
+                }
 
                 // Create & save Microtransaction record
                 let microtransactionRecord = await createMicrotransactionRecord(data.id, allResults, screeningResultTimestamp);
@@ -344,8 +348,29 @@ let main = async () => {
         await mongoClient.connect();
         console.log('db connected.');
 
-        await init();
-        processingLoop();
+        await init();  
+        // Schedule processingLoop to run at midnight every day
+        const cronExpression = `0 0 * * *`;         
+         const task = cron.schedule(cronExpression, async () => {
+           console.log("Starting Daily Data Subject Screening at ", new Date().toISOString());
+           try {
+             await processingLoop();
+             console.log("Daily Data Subject Screening Completed");
+           } catch (error) {
+             console.error("Error during scheduled screening:", error);
+           }
+         }, {
+           scheduled: true,
+           timezone: Intl.DateTimeFormat().resolvedOptions().timeZone // Use system timezone
+         });
+         
+         // Verify the task was created
+         if (task) {
+           console.log("Cron task created successfully at ", cronExpression);
+         } else {
+           console.error("Failed to create cron task");
+         }
+         console.log("Cron job scheduled: Screening will run daily at midnight");
     });
 }
 
