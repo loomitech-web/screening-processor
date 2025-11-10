@@ -36,15 +36,19 @@ let redisConnected = false;
 let scanList = [];
 let filterList = [];
 let req = {};
+let institutionCompletedCount = 0;
+let institutionCount = 0;
+let institutions = [];
 
 let getEnabledInstitutions = async () => {
     try {
-        //const enabledAiIds = ["5c0e158a033899600f3257e3"]; //"5c0e158a033899600f3257e3"]; //["5f2296146ce98c190c351da4"]; //, "689b37cf6c8c254be875c896"];
+        const enabledAiIds = ["63ff6046aea3ec7785c4ecdc"]; // ["5c0e158a033899600f3257e3"]; //"5c0e158a033899600f3257e3"]; //["5f2296146ce98c190c351da4"]; //, "689b37cf6c8c254be875c896"];
         const institutions = await req.db
             .collection("Institution")
             .find({
-                isScreening: true, 
-                easeficaId: { $ne: "63ff6046aea3ec7785c4ecdc"}
+                isScreening: true,
+                easeficaId: { $ne: "63ff6046aea3ec7785c4ecdc" }
+                //easeficaId: { $in: enabledAiIds }
             })
             .toArray();
 
@@ -121,9 +125,9 @@ let createScreeningResult = async (allResults, filteredResults, data) => {
         selectedLists: data.lists,
         totalDataSubjects: allResults.length,
         subjectsWithMatches: filteredResults.length,
-        totalMatches: 0, 
+        totalMatches: 0,
     };
-    
+
     // If there are filtered results, update totalMatches with the last result's value
     if (filteredResults.length > 0) {
         screeningResultRecord.totalMatches = filteredResults[filteredResults.length - 1].totalMatches;
@@ -147,7 +151,7 @@ let createScreeningMatches = async (filteredResults, screeningResultId, screenin
                 matchedName: match.matchResult.bestMatchName,
                 designation: match.entry.designation,
                 country: match.entry.country,
-                matchedAttributes:[ {
+                matchedAttributes: [{
                     percentageAchieved: match.matchResult.match,
                     bestMatchName: match.matchResult.bestMatchName,
                     details: match.matchResult.details
@@ -159,13 +163,13 @@ let createScreeningMatches = async (filteredResults, screeningResultId, screenin
     return matchResultRecords;
 }
 
-let createMicrotransactionRecord = async(aiId, results, screeningResultTimestamp) => {
+let createMicrotransactionRecord = async (aiId, results, screeningResultTimestamp) => {
     let institution = await req.db.collection("Institution").findOne({ easeficaId: aiId });
     let microtransactionRecord = {
         data: {
             regName: institution.name,
             totalProcessed: results.length,
-        }, 
+        },
         aiId: aiId,
         type: "ScreeningOnly",
         created: screeningResultTimestamp,
@@ -176,7 +180,7 @@ let createMicrotransactionRecord = async(aiId, results, screeningResultTimestamp
 let saveScreeningResult = async (screeningResultRecord) => {
     try {
         let screeningResult = await req.db.collection("ScreeningResult").insertOne(screeningResultRecord);
-        return {id: screeningResult.insertedId.toHexString(), timestamp: screeningResultRecord.timestamp};
+        return { id: screeningResult.insertedId.toHexString(), timestamp: screeningResultRecord.timestamp };
     } catch (error) {
         console.error("Error saving screening result", error);
         return null;
@@ -218,7 +222,7 @@ let createWorker = async (data) => {
         workerData: data
     });
 
-    worker.on('message', async(data) => {
+    worker.on('message', async (data) => {
         if (data && data.end) {
             activeThreadCount--;
             if (!results[data.id]) {
@@ -228,13 +232,13 @@ let createWorker = async (data) => {
             results[data.id].batchResults.push(data);
 
             if (results[data.id].batchResults.length == data.totalBatches) {
-                console.log(`AI ${data.id} Complete`, performance.now() - startTime);
+                console.log(`AI ${data.id} Complete`, performance.now() - data.startTime);
                 let allResults = results[data.id].batchResults.flatMap(batch => batch.results);
-                let filteredResults = allResults.filter(result => result.totalMatches > 0); 
+                let filteredResults = allResults.filter(result => result.totalMatches > 0);
 
                 // Create & savescreening result record
                 let screeningResultRecord = await createScreeningResult(allResults, filteredResults, data);
-                let {id: screeningResultId, timestamp: screeningResultTimestamp} = await saveScreeningResult(screeningResultRecord);
+                let { id: screeningResultId, timestamp: screeningResultTimestamp } = await saveScreeningResult(screeningResultRecord);
 
                 // Create & save match result records if there are any matches
                 if (filteredResults.length > 0) {
@@ -246,11 +250,25 @@ let createWorker = async (data) => {
                 let microtransactionRecord = await createMicrotransactionRecord(data.id, allResults, screeningResultTimestamp);
                 await saveMicrotransaction(microtransactionRecord);
 
+                institutionCompletedCount++;
+
+                console.log('Institution Completed', institutionCompletedCount);
+
                 // Update last scan time for all data subjects 
                 await setLastScanTime(data.id, screeningResultTimestamp);
+
+                if (institutionCompletedCount == institutionCount) {
+                    console.log('All institutions processed. Cleaning up and exiting...');
+
+                    // Close connections if needed
+                    await mongoClient.close();
+                    redisClient.disconnect();
+
+                    process.exit(0);
+                }
+            } else {
+                console.log(data.id, data.batchNumber, data.message);
             }
-        } else {
-            console.log(data);
         }
     });
 
@@ -280,33 +298,57 @@ let waitForWorkThread = async () => {
 }
 
 let processingLoop = async () => {
-    let institutions = await getEnabledInstitutions();
+    req.log.info('Downloading Sanctions Lists');
+    await manager.downloadLists(); // fetch XML files form source and save to processed lists
+    req.log.info('Getting Combined Sanctions List');
+    scanList = await manager.getCombinedSanctionsList(); // load all entries from processed lists
+    req.log.info('Filtering New Entries');
+    let filter = await manager.filterNewEntries(scanList); // compares all entries md5 against stored md5 hases in redis
+    req.log.info('New Entries', filter.newEntries.length);
+    req.log.info('Clearing Sanction List Entries');
+    await manager.clearSanctionListEntries(); // clear existing md5 hashes used for compare
+    req.log.info('Tracking Entries');
+    await manager.trackEntries(scanList); // creates md5 hashes in redis for compare in the next cycle
+    req.log.info('Combined Sanctions List', scanList.length);
+
+    institutions = await getEnabledInstitutions();
+    institutionCompletedCount = 0;
+
 
     let startTime = performance.now();
     for (let institution of institutions) {
         let batches = await getDataSubjects(institution.easeficaId);
-        let batchNumber = 0;
-        for (let batch of batches) {
 
-            await waitForWorkThread();
+        if (batches.length > 0) {
+            institutionCount++;
+            console.log('Institution', institutionCount, institution.easeficaId);
 
-            let data = {
-                aiId: institution.easeficaId,
-                batchNumber: batchNumber + 1,
-                scanList: scanList,
-                dataSubjects: batch,
-                totalBatches: batches.length,
-                options: {
-                    fuzzyThreshold: getThreshold(institution),
-                    threshold: getThreshold(institution),
-                    sources: getInstitutionScreeningLists(institution)
+            let startTime = performance.now();
+            let batchNumber = 0;
+            for (let batch of batches) {
+
+                await waitForWorkThread();
+
+                let data = {
+                    aiId: institution.easeficaId,
+                    batchNumber: batchNumber + 1,
+                    startTime: startTime,
+                    scanList: scanList,
+                    dataSubjects: batch,
+                    totalBatches: batches.length,
+                    options: {
+                        fuzzyThreshold: getThreshold(institution),
+                        threshold: getThreshold(institution),
+                        sources: getInstitutionScreeningLists(institution)
+                    }
                 }
+
+                await createWorker(data);
+
+                batchNumber++;
             }
-
-            await createWorker(data);
-
-            batchNumber++;
         }
+
     }
 }
 
@@ -324,10 +366,6 @@ let init = async () => {
         manager.monitorProcessedFiles(async (combinedList, type, path) => {
             scanList = combinedList;
             console.log('monitorProcessedFiles');
-
-            // we should get filter list
-            filterList = await manager.filterList(filterList);
-            await manager.trackEntries(filterList);
         });
 
         manager.getCombinedSanctionsList().then((combinedList) => {
@@ -348,29 +386,31 @@ let main = async () => {
         await mongoClient.connect();
         console.log('db connected.');
 
-        await init();  
+        await init();
+        await processingLoop();
         // Schedule processingLoop to run at midnight every day
-        const cronExpression = `0 0 * * *`;         
-         const task = cron.schedule(cronExpression, async () => {
-           console.log("Starting Daily Data Subject Screening at ", new Date().toISOString());
-           try {
-             await processingLoop();
-             console.log("Daily Data Subject Screening Completed");
-           } catch (error) {
-             console.error("Error during scheduled screening:", error);
-           }
-         }, {
-           scheduled: true,
-           timezone: Intl.DateTimeFormat().resolvedOptions().timeZone // Use system timezone
-         });
-         
-         // Verify the task was created
-         if (task) {
-           console.log("Cron task created successfully at ", cronExpression);
-         } else {
-           console.error("Failed to create cron task");
-         }
-         console.log("Cron job scheduled: Screening will run daily at midnight");
+        /*const cronExpression = `0 0 * * *`;
+        const task = cron.schedule(cronExpression, async () => {
+            console.log("Starting Daily Data Subject Screening at ", new Date().toISOString());
+            try {
+                await processingLoop();
+                console.log("Daily Data Subject Screening Completed");
+            } catch (error) {
+                console.error("Error during scheduled screening:", error);
+            }
+        }, {
+            scheduled: true,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone // Use system timezone
+        });
+
+        // Verify the task was created
+        if (task) {
+            console.log("Cron task created successfully at ", cronExpression);
+        } else {
+            console.error("Failed to create cron task");
+        }
+        console.log("Cron job scheduled: Screening will run daily at midnight");
+        */
     });
 }
 

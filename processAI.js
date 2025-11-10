@@ -44,6 +44,8 @@ let main = async () => {
 
         scanner.setSanctionsList(workerData.scanList);
 
+        //console.log(workerData.scanList.length);
+
         let options = workerData.options;
 
         let count = 0;
@@ -66,7 +68,7 @@ let main = async () => {
 
             // TODO accumulate results
             //console.log("Scan result", scanResult);
-            results.push({...scanResult, dataSubject: dataSubject.dataSubject});
+            results.push({ ...scanResult, dataSubject: dataSubject.dataSubject });
 
             count++;
             if (count % 100 == 0) { // show process in log every 100 records
@@ -75,10 +77,10 @@ let main = async () => {
         }
 
         mongoClient.close();
-        parentPort.postMessage({ id: workerData.aiId, message: 'db closed.' });
+        //parentPort.postMessage({ id: workerData.aiId, message: 'db closed.' });
         // console.log("Results that are being sent to the parent", results);
         await redisClient.quit();
-        parentPort.postMessage({ id: workerData.aiId, batchNumber: workerData.batchNumber, totalBatches: workerData.totalBatches, message: 'thread ending.', end: true, results: results, lists: workerData.options.sources });
+        parentPort.postMessage({ id: workerData.aiId, batchNumber: workerData.batchNumber, startTime: workerData.startTime, totalBatches: workerData.totalBatches, message: 'thread ending.', end: true, results: results, lists: workerData.options.sources });
     });
 }
 
