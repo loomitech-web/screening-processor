@@ -47,7 +47,7 @@ let getEnabledInstitutions = async () => {
             .collection("Institution")
             .find({
                 isScreening: true,
-                easeficaId: { $ne: "63ff6046aea3ec7785c4ecdc" }
+                //easeficaId: { $ne: "63ff6046aea3ec7785c4ecdc" }
                 //easeficaId: { $in: enabledAiIds }
             })
             .toArray();
@@ -299,7 +299,10 @@ let waitForWorkThread = async () => {
 
 let processingLoop = async () => {
     req.log.info('Downloading Sanctions Lists');
-    await manager.downloadLists(); // fetch XML files form source and save to processed lists
+    await manager.downloadLists().catch(error => {
+        req.log.error('Error downloading sanctions lists', error);
+        return;
+    }); // fetch XML files form source and save to processed lists
     req.log.info('Getting Combined Sanctions List');
     scanList = await manager.getCombinedSanctionsList(); // load all entries from processed lists
     req.log.info('Filtering New Entries');
@@ -314,7 +317,7 @@ let processingLoop = async () => {
     institutions = await getEnabledInstitutions();
     institutionCompletedCount = 0;
 
-
+    console.log('institutions count', institutions.length);
     let startTime = performance.now();
     for (let institution of institutions) {
         let batches = await getDataSubjects(institution.easeficaId);

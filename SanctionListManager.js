@@ -212,6 +212,20 @@ export default class SanctionListManager {
   formatName(name) {
     if (!name) return '';
 
+    if (typeof name !== 'string') {
+      // Try to convert to string if it's an object or array
+      if (typeof name === 'object') {
+        if (Array.isArray(name)) {
+          name = name.join(' ');
+        } else {
+          // If it's an object, try to extract a meaningful string
+          name = name.$t || name.value || name.text || JSON.stringify(name);
+        }
+      } else {
+        name = String(name);
+      }
+    }
+    
     try {
       // Replace commas with spaces
       name = name.replace(/,/g, ' ');
