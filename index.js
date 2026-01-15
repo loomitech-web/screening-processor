@@ -4,9 +4,21 @@ import { dirname, join, resolve } from 'path';
 import { readFile, writeFile, mkdir } from "fs/promises";
 import { MongoClient, ObjectId } from 'mongodb';
 import { performance } from 'perf_hooks';
+import axios from 'axios';
+
 import Redis from 'ioredis';
 import SanctionListManager from './SanctionListManager.js'
 import cron from 'node-cron';
+
+//const odataUrl = 'http://localhost:4601'
+const odataUrl = 'https://odata42s.easefica.co.za'
+
+const odata = axios.create({
+    baseURL: odataUrl,
+    headers: {
+        'Content-Type': 'application/json',
+    },
+})
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -42,7 +54,7 @@ let institutions = [];
 
 let getEnabledInstitutions = async () => {
     try {
-        const enabledAiIds = ["63ff6046aea3ec7785c4ecdc"]; // ["5c0e158a033899600f3257e3"]; //"5c0e158a033899600f3257e3"]; //["5f2296146ce98c190c351da4"]; //, "689b37cf6c8c254be875c896"];
+        const enabledAiIds = ["5c0e158a033899600f3257e3"]; // ["5c0e158a033899600f3257e3"]; //"5c0e158a033899600f3257e3"]; //["5f2296146ce98c190c351da4"]; //, "689b37cf6c8c254be875c896"];
         const institutions = await req.db
             .collection("Institution")
             .find({
@@ -199,11 +211,12 @@ let saveMatchResults = async (matchResultRecords) => {
 
 let saveMicrotransaction = async (microtransactionRecord) => {
     try {
-        let microtransaction = await req.db.collection("MicroTransactions").insertOne(microtransactionRecord);
-        return microtransaction.insertedId.toHexString();
+        const url = odataUrl + '/easefica-screening/credit/MicroTransaction/saveMicrotransaction'
+        const response = await odata.post(url, { microtransactionRecord: microtransactionRecord });
+        return response.data;
     } catch (error) {
         console.error("Error saving microtransaction", error);
-        return null;
+        return { error: error.message };
     }
 }
 
@@ -391,6 +404,7 @@ let main = async () => {
 
         await init();
         await processingLoop();
+       
         // Schedule processingLoop to run at midnight every day
         /*const cronExpression = `0 0 * * *`;
         const task = cron.schedule(cronExpression, async () => {

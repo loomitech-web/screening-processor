@@ -60,7 +60,8 @@
       }
     },
     "mongo": {
-      "host": "mongodb://admin:sCr33N1ng@screen.easefica.co.za:27017/?authSource=admin"
+      "host": "mongodb://admin:sCr33N1ng@screen.easefica.co.za:27017/?authSource=admin",
+      "adminHost": "mongodb+srv://doadmin:85Qu2T7e30E1qy4W@db-mongodb-ams3-85256-9777a319.mongo.ondigitalocean.com/easefica?authSource=admin&replicaSet=db-mongodb-ams3-85256&tls=true&tlsCAFile=ca-certificate.crt"
     },
     "debug": true,
     "debugVerbose": true,
@@ -137,7 +138,8 @@
       }
     },
     "mongo": {
-      "host": "mongodb://admin:sCr33N1ng@screen.easefica.co.za:27017/?authSource=admin"
+      "host": "mongodb://admin:sCr33N1ng@screen.easefica.co.za:27017/?authSource=admin", 
+      "adminHost": "mongodb+srv://doadmin:85Qu2T7e30E1qy4W@db-mongodb-ams3-85256-9777a319.mongo.ondigitalocean.com/easefica?authSource=admin&replicaSet=db-mongodb-ams3-85256&tls=true&tlsCAFile=ca-certificate.crt"
     },
     "debug": true,
     "debugVerbose": true,
