@@ -22382,10 +22382,10 @@
   {
     "reference": 11318,
     "full_names": [
-      "NAFTIRAN INTERTRADE CO. &amp;&amp;#35;40;NICO&amp;&amp;#35;41; LIMITED",
+      "NAFTIRAN INTERTRADE CO. LIMITED",
       "NICO",
       "NAFT IRAN INTERTRADE COMPANY LTD",
-      "NAFTIRAN INTERTRADE COMPANY &amp;&amp;#35;40;NICO&amp;&amp;#35;41;",
+      "NAFTIRAN INTERTRADE COMPANY",
       "NAFTIRAN INTERTRADE COMPANY LTD"
     ],
     "country": "Jersey",
@@ -22394,12 +22394,12 @@
     "birth_year": null,
     "listed": 1227657600000,
     "source": "OFAC",
-    "md5": "70eb409cd98f47e1db676b01502be4b6"
+    "md5": "3f58e13f4249a283290b30c9e0592949"
   },
   {
     "reference": 11319,
     "full_names": [
-      "NAFTIRAN INTERTRADE CO. &amp;&amp;#35;40;NICO&amp;&amp;#35;41; SARL",
+      "NAFTIRAN INTERTRADE CO. SARL",
       "NICO"
     ],
     "country": "Switzerland",
@@ -22408,7 +22408,7 @@
     "birth_year": null,
     "listed": 1227657600000,
     "source": "OFAC",
-    "md5": "67614bfb3a2ce832ee32c7266126f7ba"
+    "md5": "58fb08e6215352ca89050ede39fd1e60"
   },
   {
     "reference": 11320,
@@ -104894,25 +104894,6 @@
     "md5": "cb11d9709afa80c2d644a8e62d8dacf4"
   },
   {
-    "reference": 30284,
-    "full_names": [
-      "SOLTECH INDUSTRY CO. LTD.",
-      "SOLTECH INDUSTRIES",
-      "SOLTECH INDUSTRIES COMPANY LTD.",
-      "SOLTECH INDUSTRY CO.",
-      "SOLTECH INDUSTRY COMPANY",
-      "SOLTECH INDUSTRY COMPANY LTD",
-      "SOLTECH"
-    ],
-    "country": "China",
-    "entity_type": "Institution",
-    "comments": "SanctionsList: SDN List (Published: 2020-11-10) | SanctionsProgram: NPWMD | SanctionsType: Block | LegalAuthority: Executive Order 13382 &amp;&amp;#35;40;Non-proliferation&amp;&amp;#35;41;",
-    "birth_year": null,
-    "listed": 1604966400000,
-    "source": "OFAC",
-    "md5": "95414deb4d546b760235a91011698112"
-  },
-  {
     "reference": 30285,
     "full_names": [
       "Mohammad SOLTANMOHAMMADI",
@@ -115230,17 +115211,6 @@
     "listed": 1635379200000,
     "source": "OFAC",
     "md5": "66a89ebbf4a3a3f68f6c85cd7d850265"
-  },
-  {
-    "reference": 33499,
-    "full_names": [],
-    "country": "Lebanon",
-    "entity_type": "Individual",
-    "comments": "SanctionsList: SDN List (Published: 2021-10-28) | SanctionsProgram: LEBANON | SanctionsType: Block | LegalAuthority: Executive Order 13441 &amp;&amp;#35;40;Lebanon&amp;&amp;#35;41;",
-    "birth_year": 1967,
-    "listed": 1635379200000,
-    "source": "OFAC",
-    "md5": "bfb4019618e85d6272c817202fc89e7a"
   },
   {
     "reference": 33500,
@@ -161420,45 +161390,6 @@
     "md5": "f8de90e77afc4720ac28dd0422df4a67"
   },
   {
-    "reference": 42616,
-    "full_names": [
-      "Adama BAGAYOKO"
-    ],
-    "country": "Mali",
-    "entity_type": "Individual",
-    "comments": "SanctionsList: SDN List (Published: 2023-07-24) | SanctionsProgram: RUSSIA-EO14024 | SanctionsType: Block | LegalAuthority: Executive Order 14024 &amp;&amp;#35;40;Russia&amp;&amp;#35;41;",
-    "birth_year": 1979,
-    "listed": 1690156800000,
-    "source": "OFAC",
-    "md5": "935d3c5dc035b4fb1219ff6c6f5485e6"
-  },
-  {
-    "reference": 42617,
-    "full_names": [
-      "Alou Boi DIARRA"
-    ],
-    "country": "Mali",
-    "entity_type": "Individual",
-    "comments": "SanctionsList: SDN List (Published: 2023-07-24) | SanctionsProgram: RUSSIA-EO14024 | SanctionsType: Block | LegalAuthority: Executive Order 14024 &amp;&amp;#35;40;Russia&amp;&amp;#35;41;",
-    "birth_year": 1981,
-    "listed": 1690156800000,
-    "source": "OFAC",
-    "md5": "ab63dfe0b591a186cc16aa693e08afa0"
-  },
-  {
-    "reference": 42618,
-    "full_names": [
-      "Sadio CAMARA"
-    ],
-    "country": "Mali",
-    "entity_type": "Individual",
-    "comments": "SanctionsList: SDN List (Published: 2023-07-24) | SanctionsProgram: RUSSIA-EO14024 | SanctionsType: Block | LegalAuthority: Executive Order 14024 &amp;&amp;#35;40;Russia&amp;&amp;#35;41;",
-    "birth_year": 1979,
-    "listed": 1690156800000,
-    "source": "OFAC",
-    "md5": "8a945121b7a13ca3640d4570b66ba04d"
-  },
-  {
     "reference": 42676,
     "full_names": [
       "TATBURNEFT LIMITED LIABILITY COMPANY",
@@ -175719,19 +175650,6 @@
     "md5": "7754b9a74d3d10f20a78abe312cf9bc7"
   },
   {
-    "reference": 45728,
-    "full_names": [
-      "GLOBE TREKKERS LLC"
-    ],
-    "country": "United Arab Emirates",
-    "entity_type": "Institution",
-    "comments": "SanctionsList: SDN List (Published: 2023-11-02) | SanctionsProgram: RUSSIA-EO14024 | SanctionsType: Block | LegalAuthority: Executive Order 14024 &amp;&amp;#35;40;Russia&amp;&amp;#35;41;",
-    "birth_year": null,
-    "listed": 1698883200000,
-    "source": "OFAC",
-    "md5": "a7bced907791d7c654163e2d2fe4732f"
-  },
-  {
     "reference": 45729,
     "full_names": [
       "KOBOLT TRADING FZ LLC"
@@ -184330,14 +184248,18 @@
   },
   {
     "reference": 46870,
-    "full_names": [],
+    "full_names": [
+      "JANAT AL ANHAR GENERAL TRADING LLC",
+      "JANAT AL-ANHAR TRADING COMPANY",
+      "JANNAH AL ANHAR GENERAL TRADING LLC"
+    ],
     "country": "United Arab Emirates",
     "entity_type": "Institution",
     "comments": "SanctionsList: SDN List (Published: 2023-12-07) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
     "birth_year": null,
     "listed": 1701907200000,
     "source": "OFAC",
-    "md5": "ac9bccf5a4e792214150057f12233aa6"
+    "md5": "d4f6396aff1529a88fda9c6b3b8569ff"
   },
   {
     "reference": 46871,
@@ -239861,6 +239783,19 @@
     "md5": "200d1da8c239f2ed584372695e3e41c5"
   },
   {
+    "reference": 53854,
+    "full_names": [
+      "Ruki KARUSISI"
+    ],
+    "country": "Rwanda",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-03-02) | SanctionsProgram: DRCONGO | SanctionsType: Block | LegalAuthority: Executive Order 13413 &amp;&amp;#35;40;DRC&amp;&amp;#35;41;",
+    "birth_year": 1974,
+    "listed": 1772409600000,
+    "source": "OFAC",
+    "md5": "90312b8521da516ad54fcf892c105b58"
+  },
+  {
     "reference": 53874,
     "full_names": [
       "Jugwinder Singh BRAR"
@@ -249777,11 +249712,11 @@
     ],
     "country": "Sudan",
     "entity_type": "Institution",
-    "comments": "SanctionsList: SDN List (Published: 2025-09-12) | SanctionsProgram: SUDAN-EO14098 | SanctionsType: Block | LegalAuthority: Executive Order 14098 &amp;&amp;#35;40;Sudan&amp;&amp;#35;41;",
+    "comments": "SanctionsList: SDN List (Published: 2025-09-12) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: INA",
     "birth_year": null,
     "listed": 1757635200000,
     "source": "OFAC",
-    "md5": "bd360703ec59a3b25fc22946f58d274a"
+    "md5": "02606d488bdade8869ee4629c42c8f00"
   },
   {
     "reference": 55442,
@@ -253412,6 +253347,49 @@
     "md5": "87c081614d08d3b326371aa8b8e3e764"
   },
   {
+    "reference": 55986,
+    "full_names": [
+      "MERCIFUL HANDS GAZA",
+      "MERCIFUL HANDS CHARITY",
+      "THE MERCIFUL HANDS CHARITABLE SOCIETY"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-21) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768953600000,
+    "source": "OFAC",
+    "md5": "4a826c06b0367a6de3263a53af397c6a"
+  },
+  {
+    "reference": 55987,
+    "full_names": [
+      "WAED CAPTIVE AND LIBERATORS SOCIETY",
+      "VAED ASSOCIATION FOR PRISONERS AND RELEASED PERSONS"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-21) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768953600000,
+    "source": "OFAC",
+    "md5": "7a6c1a419d633406ee0d4daf1eab4d43"
+  },
+  {
+    "reference": 55988,
+    "full_names": [
+      "AL-SALAMEH SOCIETY",
+      "AL-SALAMA CHARITABLE SOCIETY FOR THE CARE OF THE WOUNDED AND DISABLED"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-21) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768953600000,
+    "source": "OFAC",
+    "md5": "263b82dfad5e9e35aed8722a11b5d598"
+  },
+  {
     "reference": 55989,
     "full_names": [
       "AWESOME GLOBAL INVESTMENT GROUP CO. LTD."
@@ -254071,6 +254049,60 @@
     "listed": 1764720000000,
     "source": "OFAC",
     "md5": "0b2c4a403f52753544d9aadc7ba3c8f6"
+  },
+  {
+    "reference": 56269,
+    "full_names": [
+      "JAMA&apos;IT ELANUR AL-KHIRIYA",
+      "AL NOOR PRISONER SOCIETY",
+      "AL-NUR PRISONER ASSOCIATION",
+      "EL-NUR SOCIETY"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-21) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768953600000,
+    "source": "OFAC",
+    "md5": "61f5bef6e2d954e17a3402a9c37514bd"
+  },
+  {
+    "reference": 56270,
+    "full_names": [
+      "QAWAFIL ALKHAIR ASSOCIATION"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-21) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768953600000,
+    "source": "OFAC",
+    "md5": "0324b14e181639908f40e0373736ae31"
+  },
+  {
+    "reference": 56271,
+    "full_names": [
+      "AL FALAH BENEVOLENT SOCIETY",
+      "AL-FALAH CHARITABLE ORGANIZATION"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-21) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768953600000,
+    "source": "OFAC",
+    "md5": "610b55d7157faa356ebbcd9b64f65668"
+  },
+  {
+    "reference": 56272,
+    "full_names": [],
+    "country": "Lebanon",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-21) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768953600000,
+    "source": "OFAC",
+    "md5": "27f4de8318de865809a51402984faf8e"
   },
   {
     "reference": 56273,
@@ -255462,19 +255494,6 @@
     "md5": "4492a1f994316d9064898c133560f477"
   },
   {
-    "reference": 56392,
-    "full_names": [
-      "ALTOMARE S.A."
-    ],
-    "country": "Greece",
-    "entity_type": "Institution",
-    "comments": "SanctionsList: SDN List (Published: 2025-11-20) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
-    "birth_year": null,
-    "listed": 1763596800000,
-    "source": "OFAC",
-    "md5": "e45ae239da1593c10174186950203e10"
-  },
-  {
     "reference": 56393,
     "full_names": [
       "RN SHIP MANAGEMENT PRIVATE LIMITED",
@@ -255640,19 +255659,6 @@
     "listed": 1763596800000,
     "source": "OFAC",
     "md5": "ecc40574bbdab3226b5165236c00dbfe"
-  },
-  {
-    "reference": 56406,
-    "full_names": [
-      "KALLISTA"
-    ],
-    "country": "",
-    "entity_type": "Institution",
-    "comments": "SanctionsList: SDN List (Published: 2025-11-20) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
-    "birth_year": null,
-    "listed": 1763596800000,
-    "source": "OFAC",
-    "md5": "72d69c40a9922871759645bef3e3081c"
   },
   {
     "reference": 56407,
@@ -255852,6 +255858,34 @@
     "listed": 1762992000000,
     "source": "OFAC",
     "md5": "797d4688d1ab9fdf83f2b720b4d71365"
+  },
+  {
+    "reference": 56462,
+    "full_names": [
+      "KOVAY GARDENS",
+      "VALLARTA GARDENS"
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "7da96b091438bf7b6cbb3ac56c620a1a"
+  },
+  {
+    "reference": 56463,
+    "full_names": [
+      "Luis Manuel PICADO GRIJALBA",
+      "Shock"
+    ],
+    "country": "Costa Rica",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-22) | SanctionsProgram: ILLICIT-DRUGS-EO14059 | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": 1981,
+    "listed": 1769040000000,
+    "source": "OFAC",
+    "md5": "a436aeb3989037157f9691511758480b"
   },
   {
     "reference": 56482,
@@ -256292,33 +256326,6 @@
     "md5": "824915bcdc409e55f524ec5f62ebc063"
   },
   {
-    "reference": 56582,
-    "full_names": [
-      "ARCTIC VOYAGER INCORPORATED",
-      "ARCTIC VOYAGER INC"
-    ],
-    "country": "Marshall Islands",
-    "entity_type": "Institution",
-    "comments": "SanctionsList: SDN List (Published: 2025-12-11) | SanctionsProgram: VENEZUELA-EO13850 | SanctionsType: Block | LegalAuthority: Executive Order 13850 &amp;&amp;#35;40;Venezuela&amp;&amp;#35;41;",
-    "birth_year": null,
-    "listed": 1765411200000,
-    "source": "OFAC",
-    "md5": "5bc0ea20eeb70f0ee89154c49f833e50"
-  },
-  {
-    "reference": 56583,
-    "full_names": [
-      "KIARA M"
-    ],
-    "country": "",
-    "entity_type": "Institution",
-    "comments": "SanctionsList: SDN List (Published: 2025-12-11) | SanctionsProgram: VENEZUELA-EO13850 | SanctionsType: Block | LegalAuthority: Executive Order 13850 &amp;&amp;#35;40;Venezuela&amp;&amp;#35;41;",
-    "birth_year": null,
-    "listed": 1765411200000,
-    "source": "OFAC",
-    "md5": "96697de2a4a1ee266d80521e9092744e"
-  },
-  {
     "reference": 56584,
     "full_names": [
       "POWEROY INVESTMENT LIMITED",
@@ -256658,6 +256665,46 @@
     "md5": "cc07f00dbcb3617917c9378d0f78552f"
   },
   {
+    "reference": 56619,
+    "full_names": [
+      "Johana Vanessa FLORES JIMENEZ"
+    ],
+    "country": "Nicaragua",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-26) | SanctionsProgram: NICARAGUA | SanctionsType: Block | LegalAuthority: Executive Order 13851 &amp;&amp;#35;40;Nicaragua&amp;&amp;#35;41;",
+    "birth_year": 1971,
+    "listed": 1772064000000,
+    "source": "OFAC",
+    "md5": "db2d421dec089a3c19478d4cc04490e7"
+  },
+  {
+    "reference": 56620,
+    "full_names": [
+      "Aldo Martin SAENZ ULLOA"
+    ],
+    "country": "Nicaragua",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-26) | SanctionsProgram: NICARAGUA | SanctionsType: Block | LegalAuthority: Executive Order 13851 &amp;&amp;#35;40;Nicaragua&amp;&amp;#35;41;",
+    "birth_year": 1958,
+    "listed": 1772064000000,
+    "source": "OFAC",
+    "md5": "ac318d41ddcf382617c93bc86dedeffb"
+  },
+  {
+    "reference": 56631,
+    "full_names": [
+      "ALTIS TEKSTIL MAKINA TICARET LIMITED SIRKETI",
+      "ALTIS TEXTILE MACHINERY TRADING COMPANY LIMITED"
+    ],
+    "country": "Turkey",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IFSR | SanctionsType: Block | LegalAuthority: Executive Order 13382 &amp;&amp;#35;40;Non-proliferation&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "75fce160c5e3691f1cad698517ddd948"
+  },
+  {
     "reference": 56632,
     "full_names": [
       "Ramon CARRETERO NAPOLITANO"
@@ -256669,6 +256716,32 @@
     "listed": 1765411200000,
     "source": "OFAC",
     "md5": "054646d0313d58f87ac6cc813b748438"
+  },
+  {
+    "reference": 56633,
+    "full_names": [
+      "Leonel Jose GUTIERREZ LOPEZ"
+    ],
+    "country": "Nicaragua",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-26) | SanctionsProgram: NICARAGUA | SanctionsType: Block | LegalAuthority: Executive Order 13851 &amp;&amp;#35;40;Nicaragua&amp;&amp;#35;41;",
+    "birth_year": 1963,
+    "listed": 1772064000000,
+    "source": "OFAC",
+    "md5": "bbfeab2d30f49c0df8b40bf9ad42846f"
+  },
+  {
+    "reference": 56634,
+    "full_names": [
+      "Denis MEMBRENO RIVAS"
+    ],
+    "country": "Nicaragua",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-26) | SanctionsProgram: NICARAGUA | SanctionsType: Block | LegalAuthority: Executive Order 13851 &amp;&amp;#35;40;Nicaragua&amp;&amp;#35;41;",
+    "birth_year": 1956,
+    "listed": 1772064000000,
+    "source": "OFAC",
+    "md5": "5b4a8d97ac8f65c113d769f475e22e59"
   },
   {
     "reference": 56636,
@@ -256903,6 +256976,59 @@
     "md5": "65a2fe94fa70967c7449b1a8e1fc6f8a"
   },
   {
+    "reference": 56664,
+    "full_names": [
+      "Celia Margarita REYES OCHOA",
+      "Celia REYES OCHOA"
+    ],
+    "country": "Nicaragua",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-26) | SanctionsProgram: NICARAGUA | SanctionsType: Block | LegalAuthority: Executive Order 13851 &amp;&amp;#35;40;Nicaragua&amp;&amp;#35;41;",
+    "birth_year": 1983,
+    "listed": 1772064000000,
+    "source": "OFAC",
+    "md5": "6fd50c0fca94d6f021511547381361c1"
+  },
+  {
+    "reference": 56667,
+    "full_names": [
+      "Vincent NYAKARUNDI"
+    ],
+    "country": "Rwanda",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-03-02) | SanctionsProgram: DRCONGO | SanctionsType: Block | LegalAuthority: Executive Order 13413 &amp;&amp;#35;40;DRC&amp;&amp;#35;41;",
+    "birth_year": 1969,
+    "listed": 1772409600000,
+    "source": "OFAC",
+    "md5": "eb76f0cdca534526abff7fd1785b3b00"
+  },
+  {
+    "reference": 56668,
+    "full_names": [
+      "ARYA GLOBAL GIDA SANAYI VE TICARET LIMITED SIRKETI"
+    ],
+    "country": "Turkey",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: NPWMD | SanctionsType: Block | LegalAuthority: Executive Order 13382 &amp;&amp;#35;40;Non-proliferation&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "69ffdd2e6e0dde771b496a413b1dc562"
+  },
+  {
+    "reference": 56670,
+    "full_names": [
+      "UTUS GUMRUKLEME GIDA TEKSTIL ITHALAT IHRACAT DIS TICARET VE SANAYI LIMITED SIRKETI"
+    ],
+    "country": "Turkey",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: NPWMD | SanctionsType: Block | LegalAuthority: Executive Order 13382 &amp;&amp;#35;40;Non-proliferation&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "d44a56faaa4cee024a29e9d5d239a6f0"
+  },
+  {
     "reference": 56671,
     "full_names": [
       "EMPRESA AERONAUTICA NACIONAL SA",
@@ -257068,6 +257194,202 @@
     "md5": "72d6882ba6e670110ade50402294f291"
   },
   {
+    "reference": 56690,
+    "full_names": [
+      "ALWADI KABIR CO",
+      "WADI AL-KABIR COMPANY",
+      "AL-WADI AL-KABIR COMPANY"
+    ],
+    "country": "Yemen",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "75b3a73414a91f2b4c6d4a21ec271d41"
+  },
+  {
+    "reference": 56691,
+    "full_names": [
+      "RABIA COMPANY",
+      "BASSAM AL-SAEEDI AND PARTNERS FREE ZONE COMPANY",
+      "BASSAM AL-SAEEDI AND PARTNERS FZC"
+    ],
+    "country": "Oman",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "f5935f5182f8e3b91de3ea6c6ca7942d"
+  },
+  {
+    "reference": 56692,
+    "full_names": [
+      "AL-RIDHWAN EXCHANGE COMPANY",
+      "AL-RADWAN EXCHANGE AND TRANSFERS CO."
+    ],
+    "country": "Yemen",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "90c24dec1a8216172c6d7f6c067b612d"
+  },
+  {
+    "reference": 56693,
+    "full_names": [
+      "BARASH AVIATION AND CARGO COMPANY LIMITED",
+      "BARASH AVIATION"
+    ],
+    "country": "Yemen",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "ec769a97916573e32f943a9b8781bcd5"
+  },
+  {
+    "reference": 56694,
+    "full_names": [],
+    "country": "Yemen",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "46cdb19d4234d08dea2411b25f6d1e4b"
+  },
+  {
+    "reference": 56695,
+    "full_names": [],
+    "country": "Oman",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1974,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "203d927f80bb6b781b840ac334d37a37"
+  },
+  {
+    "reference": 56696,
+    "full_names": [
+      "Adil Mutahhar Abdallah AL MUAYYAD"
+    ],
+    "country": "Yemen",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1975,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "045b933fa56a86e7d81cb5ca8555a73d"
+  },
+  {
+    "reference": 56697,
+    "full_names": [
+      "Imran ASGHAR"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1962,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "71a116465c5e699e3d980c4dcf7b0c6e"
+  },
+  {
+    "reference": 56698,
+    "full_names": [
+      "AL SHARAFI OIL COMPANIES SERVICES",
+      "AL-SHARAFI OIL",
+      "AL-SHARAFI OIL FOR IMPORTING PETROLEUM DERIVATIVES"
+    ],
+    "country": "Yemen",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "6c9b675c70ecb99b5dcdc51ab8f925a1"
+  },
+  {
+    "reference": 56699,
+    "full_names": [
+      "Zayd &apos;Ali Ahmed AL-SHARAFI",
+      "Zaid &apos;Ali Yahiya AL-SHARAFI AL-AZRAQ"
+    ],
+    "country": "Yemen",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1989,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "5eeb249746307cec09a2181a28acfa1d"
+  },
+  {
+    "reference": 56700,
+    "full_names": [
+      "ADEEMA OIL FZC",
+      "ADIMA OIL"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "497b3260f860d6acfe958e5ab95bd872"
+  },
+  {
+    "reference": 56701,
+    "full_names": [
+      "Waleed Fathi Salam BAIDHANI",
+      "Walid Fathi SALM",
+      "Waled Fatehi Salem ALBAIDHANI"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1980,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "34d4b3c9d3f56943f4c329b813a09d11"
+  },
+  {
+    "reference": 56702,
+    "full_names": [
+      "ALSAA PETROLEUM AND SHIPPING FZC",
+      "ALSA COMPANY",
+      "ALSAA PETROLEUM &amp; SHIPPING",
+      "ALSAA",
+      "ALSAA PETROLEUM &amp; SHIPPING FZC"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "7bdbd2de03777c00ee6f171228d71384"
+  },
+  {
+    "reference": 56703,
+    "full_names": [
+      "NEW OCEAN TRADING FZE",
+      "NEW OCEAN INTERNATIONAL TRADING FZE",
+      "NEW OCEAN TRADING AND IMPORT COMPANY"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "6369e158682563f09030129bca3720b2"
+  },
+  {
     "reference": 56704,
     "full_names": [
       "KRAPE MYRTLE CO LTD"
@@ -257106,6 +257428,100 @@
     "listed": 1767139200000,
     "source": "OFAC",
     "md5": "183f900b2405e1ae663aee2b0ebc09d2"
+  },
+  {
+    "reference": 56710,
+    "full_names": [
+      "ALBARRAQ SHIPPING CO"
+    ],
+    "country": "Marshall Islands",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "b1683a6afbcb40773866c60b865335f0"
+  },
+  {
+    "reference": 56711,
+    "full_names": [
+      "ALBARRAQ Z"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "fafa71d5a5d3881988ac7cf284c8d79b"
+  },
+  {
+    "reference": 56712,
+    "full_names": [],
+    "country": "Syria",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1994,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "ce51117767af3251c534dff2c565dc57"
+  },
+  {
+    "reference": 56713,
+    "full_names": [],
+    "country": "Yemen",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1988,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "52e98c949a83e1a070653109d5dc099a"
+  },
+  {
+    "reference": 56714,
+    "full_names": [],
+    "country": "Syria",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1986,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "fa22a73d7a13b1252b248e725303671c"
+  },
+  {
+    "reference": 56716,
+    "full_names": [],
+    "country": "Syria",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1990,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "ee0412d51fe71f4d918a297c5d7a7e53"
+  },
+  {
+    "reference": 56717,
+    "full_names": [
+      "Ranveer SINGH"
+    ],
+    "country": "India",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1983,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "35119d1462ecbd48b3a2efbbf39a643a"
+  },
+  {
+    "reference": 56719,
+    "full_names": [],
+    "country": "Russia",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-16) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1982,
+    "listed": 1768521600000,
+    "source": "OFAC",
+    "md5": "5bb45b65d07dca75f7eb2458256f80c7"
   },
   {
     "reference": 56720,
@@ -257211,5 +257627,2165 @@
     "listed": 1768262400000,
     "source": "OFAC",
     "md5": "8739670215f6f990cb67d250063bbbb3"
+  },
+  {
+    "reference": 56733,
+    "full_names": [
+      "Jordie Kevin PICADO GRIJALBA",
+      "Noni"
+    ],
+    "country": "Costa Rica",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-22) | SanctionsProgram: ILLICIT-DRUGS-EO14059 | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": 1993,
+    "listed": 1769040000000,
+    "source": "OFAC",
+    "md5": "3113c2bff7c3500ad74136ea8fff7d4c"
+  },
+  {
+    "reference": 56735,
+    "full_names": [],
+    "country": "Costa Rica",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-22) | SanctionsProgram: ILLICIT-DRUGS-EO14059 | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": 1987,
+    "listed": 1769040000000,
+    "source": "OFAC",
+    "md5": "f8805d29c8bee89523f330e314179876"
+  },
+  {
+    "reference": 56737,
+    "full_names": [
+      "Anita Yorleny MC DONAL RODRIGUEZ",
+      "Anita MCDONALD RODRIGUEZ"
+    ],
+    "country": "Costa Rica",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-22) | SanctionsProgram: ILLICIT-DRUGS-EO14059 | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": 1974,
+    "listed": 1769040000000,
+    "source": "OFAC",
+    "md5": "f92a25208f6268dd8a36ca7d13f92a4f"
+  },
+  {
+    "reference": 56740,
+    "full_names": [
+      "Estefania MC DONALD RODRIGUEZ",
+      "Estefania MCDONALD RODRIGUEZ"
+    ],
+    "country": "Costa Rica",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-22) | SanctionsProgram: ILLICIT-DRUGS-EO14059 | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": 1992,
+    "listed": 1769040000000,
+    "source": "OFAC",
+    "md5": "8ea7fad14ffc6f1d58baf85124af94af"
+  },
+  {
+    "reference": 56742,
+    "full_names": [
+      "ASOCIACION DE LIDERES LIMONENSES DEL SECTOR PESQUERO",
+      "ASOLIPES"
+    ],
+    "country": "Costa Rica",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-22) | SanctionsProgram: ILLICIT-DRUGS-EO14059 | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769040000000,
+    "source": "OFAC",
+    "md5": "294e0ed5abbaef35d0d3ea68aa1aad2b"
+  },
+  {
+    "reference": 56743,
+    "full_names": [
+      "3-101-507688 SA"
+    ],
+    "country": "Costa Rica",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-22) | SanctionsProgram: ILLICIT-DRUGS-EO14059 | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769040000000,
+    "source": "OFAC",
+    "md5": "4aa93002f7d77c1db07dd0c106f197a4"
+  },
+  {
+    "reference": 56744,
+    "full_names": [
+      "CELAJES DE YORK CDY SA"
+    ],
+    "country": "Costa Rica",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-22) | SanctionsProgram: ILLICIT-DRUGS-EO14059 | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769040000000,
+    "source": "OFAC",
+    "md5": "4d22f4abb9b10a55ea375531892b2938"
+  },
+  {
+    "reference": 56745,
+    "full_names": [
+      "INVERSIONES LAURITA L AND L SA",
+      "INVERSIONES LAURITA L&amp;L SA"
+    ],
+    "country": "Costa Rica",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-22) | SanctionsProgram: ILLICIT-DRUGS-EO14059 | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769040000000,
+    "source": "OFAC",
+    "md5": "5af91e3a39dd0438541c998c82c843e0"
+  },
+  {
+    "reference": 56746,
+    "full_names": [
+      "MAGIC ESTHETIC SALON SA"
+    ],
+    "country": "Costa Rica",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-22) | SanctionsProgram: ILLICIT-DRUGS-EO14059 | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769040000000,
+    "source": "OFAC",
+    "md5": "f38e0245fddb3d8413dee2e96fec3454"
+  },
+  {
+    "reference": 56756,
+    "full_names": [
+      "Mehdi RASHNO",
+      "Mehdi RASHNU",
+      "Mahdi RASHNO"
+    ],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1982,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "32e737ae4f824562a183c33a0a7ee622"
+  },
+  {
+    "reference": 56757,
+    "full_names": [
+      "Bashir ABBASPOUR QOMI",
+      "Bashir ABBASPOUR GHOMI"
+    ],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1965,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "8a448631048006b16dc69360ec2f6641"
+  },
+  {
+    "reference": 56758,
+    "full_names": [
+      "Hamid Reza KHAMER",
+      "Hamid Reza KHAMR"
+    ],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1967,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "a79e3503b66f32d24da99e5dd0eeec77"
+  },
+  {
+    "reference": 56772,
+    "full_names": [
+      "NIKAN PEZHVAK ARIA KISH COMPANY"
+    ],
+    "country": "Iran",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "1d3925f8e81accc9291f5fca494046a7"
+  },
+  {
+    "reference": 56773,
+    "full_names": [],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1970,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "cc0a6b47927b2958abe07dd943256d28"
+  },
+  {
+    "reference": 56774,
+    "full_names": [
+      "NANSHAN LTD"
+    ],
+    "country": "United Kingdom",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "fb97656347304406887b6f5aa8847ea2"
+  },
+  {
+    "reference": 56775,
+    "full_names": [],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "8036ec59756213752498ed89c5165c10"
+  },
+  {
+    "reference": 56776,
+    "full_names": [],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1970,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "b9e8d9939e8d18ce7427a6a9cfe7d7b0"
+  },
+  {
+    "reference": 56777,
+    "full_names": [],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "8a50f93b914dc60fee511c100e4a5310"
+  },
+  {
+    "reference": 56778,
+    "full_names": [],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1980,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "bd6688369d4bccd9633e87168fb8ed88"
+  },
+  {
+    "reference": 56779,
+    "full_names": [],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-HR | SanctionsType: Block | LegalAuthority: Executive Order 13553 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1966,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "9a8f272a526a282c7e4be71c2c8a5658"
+  },
+  {
+    "reference": 56780,
+    "full_names": [],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IFSR | SanctionsType: Block | LegalAuthority: Executive Order 13553 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1965,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "4ca72af1e075a9f7eebfe4a1d599dc5c"
+  },
+  {
+    "reference": 56781,
+    "full_names": [],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IFSR | SanctionsType: Block | LegalAuthority: Executive Order 13553 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1975,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "3c707752f9c07244a13590ea9f275a9f"
+  },
+  {
+    "reference": 56782,
+    "full_names": [
+      "ASESORIA Y SERVICIOS IMPORTADORES S.A. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "e9dd97019086c6802b7cab7d8d6ecc62"
+  },
+  {
+    "reference": 56783,
+    "full_names": [
+      "COLINAS PROYECTOS Y CONSTRUCCIONES S.A. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "137225d04753b6b962747c8224c397fe"
+  },
+  {
+    "reference": 56785,
+    "full_names": [],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-HR | SanctionsType: Block | LegalAuthority: Executive Order 13553 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1975,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "786e3a7fa039787afbd210dd0ba54606"
+  },
+  {
+    "reference": 56788,
+    "full_names": [
+      "Ali Ardeshir LARIJANI"
+    ],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13876 | SanctionsType: Block | LegalAuthority: Executive Order 13876 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1958,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "e62c521f2a75648790717e3584507cbf"
+  },
+  {
+    "reference": 56789,
+    "full_names": [
+      "FARDIS PRISON",
+      "KACHOUII PRISON",
+      "KACHOUEI PRISON",
+      "KACHOUI PRISON",
+      "FARDIS PENITENTIARY"
+    ],
+    "country": "Iran",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: CAATSA - IRAN | SanctionsType: Block | LegalAuthority: CAATSA - Section 106",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "3243b95ba616823c1cf4c34f72a59f6a"
+  },
+  {
+    "reference": 56790,
+    "full_names": [],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "77f7e19533d57d72b3fad13cbe78a167"
+  },
+  {
+    "reference": 56791,
+    "full_names": [
+      "EMPIRE INTERNATIONAL TRADING FZE"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "1f75965af335eb6ebc76db91c1531827"
+  },
+  {
+    "reference": 56792,
+    "full_names": [
+      "GOLDEN MIST PTE. LTD."
+    ],
+    "country": "Singapore",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "04328e77ccdf22580853d90e28a4d455"
+  },
+  {
+    "reference": 56793,
+    "full_names": [
+      "SIWAN TRADING INTERNATIONAL FZE"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "ac35c29d2e9a7a4697cfe80a872ee95b"
+  },
+  {
+    "reference": 56794,
+    "full_names": [
+      "Abu Hasan"
+    ],
+    "country": "United Kingdom",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-21) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1961,
+    "listed": 1768953600000,
+    "source": "OFAC",
+    "md5": "23cfc4d3c5c759fe20c9f4ffa0d1298d"
+  },
+  {
+    "reference": 56795,
+    "full_names": [
+      "DESERT OASIS PETROCHEMICAL TRADING COMPANY LLC"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "a80634ff896612ae3db3a96755d51a25"
+  },
+  {
+    "reference": 56796,
+    "full_names": [],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "1d42c532c4b5548e443c3af3a6f4f208"
+  },
+  {
+    "reference": 56797,
+    "full_names": [],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "9f5e96f8f04273857281e1e00627d06b"
+  },
+  {
+    "reference": 56798,
+    "full_names": [],
+    "country": "Iran",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-15) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1768435200000,
+    "source": "OFAC",
+    "md5": "a3fd62ddf7b42dfcafc93c38bbc91037"
+  },
+  {
+    "reference": 56810,
+    "full_names": [
+      "Carlos Humberto RIVERA MIRAMONTES"
+    ],
+    "country": "Mexico",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": 1962,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "66640cb49c00751eab4d54e8910a2c38"
+  },
+  {
+    "reference": 56811,
+    "full_names": [
+      "CORPORATIVO CONTROLADOR EXPLORA S.A. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "6ebb3722af0d8d48e14ff7d3a9d98649"
+  },
+  {
+    "reference": 56812,
+    "full_names": [
+      "DEEP BLUE DESARROLLOS S. DE R.L. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "c37cb21d1642b4b70cb7514db65b25ec"
+  },
+  {
+    "reference": 56813,
+    "full_names": [
+      "DEEP BLUE SERVICIOS S.A. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "9e699c4f96bf9b56928b51a14b9dc701"
+  },
+  {
+    "reference": 56814,
+    "full_names": [
+      "ESTRATEGIA PVR S. DE R.L. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "2a96fad3aadd73055374ee9d69fe2695"
+  },
+  {
+    "reference": 56815,
+    "full_names": [
+      "VG DESARROLLOS DE LA BAHIA S.A. DE C.V.",
+      "KOVAY DESARROLLOS",
+      "GRUPO KOVAY",
+      "NAVIS BY LA CRUZ",
+      "SANTA JULIA SEASIDE LIVING",
+      "QUIYA RESIDENCES",
+      "ZUL BY LA CRUZ",
+      "MARINE DIAMOND",
+      "FARO GRILL",
+      "SELVARA SIGNATURE COLLECTION"
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "11c52d398437f29c4b50dbf9b40c1fc3"
+  },
+  {
+    "reference": 56816,
+    "full_names": [
+      "PUNTO 54 S.A. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "700856eb23b48b4d693d71678351d344"
+  },
+  {
+    "reference": 56817,
+    "full_names": [
+      "REEF ADMINISTRACION AVANZADA S. DE R.L. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "efe06c89aa7eb26818bdfc1a5abf4cd0"
+  },
+  {
+    "reference": 56818,
+    "full_names": [
+      "HIGH LAND PARK S.A. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "6d94930b789cee6c39f236fe9cd5e6fa"
+  },
+  {
+    "reference": 56819,
+    "full_names": [
+      "ORNITORRINCO INMOBILIARIA S.A. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "03ee75366fea331fc7a88038f45bd6c3"
+  },
+  {
+    "reference": 56820,
+    "full_names": [
+      "SOLUGAS SOLUCIONES EN GASOLINERAS S.A. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "13690c635b0e0a7a8488b4a020da31eb"
+  },
+  {
+    "reference": 56822,
+    "full_names": [
+      "HOTEL MANAGEMENT INTERNATIONAL LLC",
+      "VALLARTA GARDENS RESORTS LLC"
+    ],
+    "country": "United States",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "38e8b2226a6adb11675f5fe404711070"
+  },
+  {
+    "reference": 56823,
+    "full_names": [
+      "ADMINISTRADORA Y COMERCIALIZADORA DEL MAR S.A. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "2b9964e79a2de0b31107f2001cb3bf36"
+  },
+  {
+    "reference": 56824,
+    "full_names": [
+      "Oscar Enrique JIMENEZ TAPIA",
+      "El Tagayas"
+    ],
+    "country": "Mexico",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": 1985,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "cc642baf07bb3693330cf8cfa6bbe2fa"
+  },
+  {
+    "reference": 56825,
+    "full_names": [
+      "Jose Luis GUTIERREZ OCHOA",
+      "Tolin"
+    ],
+    "country": "Mexico",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": 1987,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "0018c0b341bd2e3a53f6d3de8ee53840"
+  },
+  {
+    "reference": 56826,
+    "full_names": [
+      "Jonathan Faustino RIOS GONZALEZ",
+      "Johnny Hood",
+      "Jonas Hood"
+    ],
+    "country": "Mexico",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": 1989,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "2922d03869da620e9164eef26711049b"
+  },
+  {
+    "reference": 56827,
+    "full_names": [
+      "Jose Eduardo PALACIOS RODRIGUEZ"
+    ],
+    "country": "Mexico",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": 1988,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "22a3fe291d2703ece5363847c6ca8c62"
+  },
+  {
+    "reference": 56828,
+    "full_names": [
+      "CONSTRUCTORA PALACIOS PV S.A. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "9e613e76ecb6a64d4e54e0cd25e3c56d"
+  },
+  {
+    "reference": 56829,
+    "full_names": [
+      "AGENCIA DE SERVICIOS TURISTICOS INTERNACIONALES G8 S.A. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "83647125bcc045005e1e1d9bb49878a8"
+  },
+  {
+    "reference": 56830,
+    "full_names": [
+      "CORPORATIVO DE TRANSFERENCIAS INTERNACIONALES DE BIENES RAICES S.A. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "a101c2d9ecc5d056674d4a722fde6548"
+  },
+  {
+    "reference": 56831,
+    "full_names": [
+      "CLUB DEPORTIVO DE FORMACION AL FUTBOL GMX S.DE R.L. DE C.V."
+    ],
+    "country": "Mexico",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 14059 &amp;&amp;#35;40;Illicit Drugs&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "8becaeab467b1fe32335a19f14d030c8"
+  },
+  {
+    "reference": 56832,
+    "full_names": [],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "8e8279978e7731475faa70b7fe73ab9d"
+  },
+  {
+    "reference": 56833,
+    "full_names": [
+      "GALERAN SERVICE CORP"
+    ],
+    "country": "Seychelles",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "ad4218333868fb153cef1d22b5d8e8ff"
+  },
+  {
+    "reference": 56834,
+    "full_names": [
+      "AAYAT SHIP MANAGEMENT PRIVATE LIMITED",
+      "AAYAT SHIP MANAGEMENT PVT LTD"
+    ],
+    "country": "India",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "e5fda226e430fef552a2a4154d8e8ca3"
+  },
+  {
+    "reference": 56835,
+    "full_names": [
+      "BLACK STONE OIL &amp; GAS SPC"
+    ],
+    "country": "Oman",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "dc25dd7b0409252bbb75f4177bfb2006"
+  },
+  {
+    "reference": 56836,
+    "full_names": [
+      "LONGEVITY SHIPPING LIMITED"
+    ],
+    "country": "Marshall Islands",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "2d2fbee02ae70afb7fb1307d1b9237de"
+  },
+  {
+    "reference": 56837,
+    "full_names": [
+      "SEA BIRD"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "8c3f97d0eb2cbc5773a6deafcb7d2e67"
+  },
+  {
+    "reference": 56838,
+    "full_names": [
+      "AVON"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "c56433d368a51060b4c4d76a3f3d4e6b"
+  },
+  {
+    "reference": 56839,
+    "full_names": [
+      "AL DIAB II"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "8e8fe398de4425e372e2aaf0bec5f864"
+  },
+  {
+    "reference": 56840,
+    "full_names": [
+      "ODYSSEY MARINE INC."
+    ],
+    "country": "Marshall Islands",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "37b274c171d6c444ba32016838b8a3c9"
+  },
+  {
+    "reference": 56850,
+    "full_names": [
+      "PAROS MARITIME S.A."
+    ],
+    "country": "Panama",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "a9d9b53d2838f71bf2cab20518d77e7f"
+  },
+  {
+    "reference": 56851,
+    "full_names": [
+      "WANSA GAS SHIPPING CO."
+    ],
+    "country": "Marshall Islands",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "781284a09d0cd7423d10714cd6634725"
+  },
+  {
+    "reference": 56852,
+    "full_names": [
+      "NIBA"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "d1029b6a5e5fdafe96a1c4c1622c1ab5"
+  },
+  {
+    "reference": 56853,
+    "full_names": [
+      "LUMA"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "1561747b0fe37508b5f4ff6b1b121fdd"
+  },
+  {
+    "reference": 56854,
+    "full_names": [
+      "BENOIL SHIPPING INC"
+    ],
+    "country": "Liberia",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "60fef8c56ef269887907aa785f324f3a"
+  },
+  {
+    "reference": 56855,
+    "full_names": [
+      "TRADE BRIDGE GLOBAL INC."
+    ],
+    "country": "Marshall Islands",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "7b817fdf11e46ad2442ec86f7d896705"
+  },
+  {
+    "reference": 56856,
+    "full_names": [
+      "CESARIA"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "b6428a6824c0beb15c2c07484c392423"
+  },
+  {
+    "reference": 56857,
+    "full_names": [
+      "LONGEVITY 7"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "3af4df2fe1c75a5f7edcbd1973709e8e"
+  },
+  {
+    "reference": 56858,
+    "full_names": [
+      "EASTERN HERO"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "c88712c7455f2b0a91158bbab94df382"
+  },
+  {
+    "reference": 56859,
+    "full_names": [
+      "AQUA SPIRIT"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "e41d5181bed56a0d42a8956e6ceb5833"
+  },
+  {
+    "reference": 56860,
+    "full_names": [
+      "CHIRON 5"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "c4f7aecb961d3f44497b3772a4282f96"
+  },
+  {
+    "reference": 56861,
+    "full_names": [
+      "KEEL"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-23) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769126400000,
+    "source": "OFAC",
+    "md5": "e236ceaaff865d22b1f3e0bd28a40970"
+  },
+  {
+    "reference": 56862,
+    "full_names": [
+      "Stanislas GASHUGI"
+    ],
+    "country": "Rwanda",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-03-02) | SanctionsProgram: DRCONGO | SanctionsType: Block | LegalAuthority: Executive Order 13413 &amp;&amp;#35;40;DRC&amp;&amp;#35;41;",
+    "birth_year": 1973,
+    "listed": 1772409600000,
+    "source": "OFAC",
+    "md5": "86d82644892d8a5aa2bdd5178e998acd"
+  },
+  {
+    "reference": 56863,
+    "full_names": [
+      "Mubarakh MUGANGA",
+      "MK MUBARKH"
+    ],
+    "country": "Rwanda",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-03-02) | SanctionsProgram: DRCONGO | SanctionsType: Block | LegalAuthority: Executive Order 13413 &amp;&amp;#35;40;DRC&amp;&amp;#35;41;",
+    "birth_year": 1967,
+    "listed": 1772409600000,
+    "source": "OFAC",
+    "md5": "8110a599596d9dde97bba248545478f1"
+  },
+  {
+    "reference": 56864,
+    "full_names": [],
+    "country": "United Arab Emirates",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-30) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1974,
+    "listed": 1769731200000,
+    "source": "OFAC",
+    "md5": "26d4e97c5421cc00e11e9e773e83d944"
+  },
+  {
+    "reference": 56865,
+    "full_names": [
+      "ZEDCEX EXCHANGE LTD"
+    ],
+    "country": "United Kingdom",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-30) | SanctionsProgram: IFSR | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769731200000,
+    "source": "OFAC",
+    "md5": "2f9397aeae6577cc0206f0c837773e6b"
+  },
+  {
+    "reference": 56867,
+    "full_names": [
+      "ZEDXION EXCHANGE LTD",
+      "ZEDXION LIMITED"
+    ],
+    "country": "United Kingdom",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-30) | SanctionsProgram: IFSR | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1769731200000,
+    "source": "OFAC",
+    "md5": "fee102d926cdcc790b3c58644de5722f"
+  },
+  {
+    "reference": 56870,
+    "full_names": [
+      "MANARAT ALKHALEEJ MARINE SERVICES FZE"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "1f1f90309cdbcae38ae15f3ffb324cb1"
+  },
+  {
+    "reference": 56890,
+    "full_names": [
+      "Mehdi HAJJIAN"
+    ],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-30) | SanctionsProgram: IRAN-HR | SanctionsType: Block | LegalAuthority: Executive Order 13553 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1976,
+    "listed": 1769731200000,
+    "source": "OFAC",
+    "md5": "56b9194a2b01da7d065a71daec791eea"
+  },
+  {
+    "reference": 56891,
+    "full_names": [],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-30) | SanctionsProgram: IRGC | SanctionsType: Block | LegalAuthority: Executive Order 13553 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1961,
+    "listed": 1769731200000,
+    "source": "OFAC",
+    "md5": "7cfa36bc06c6e1112f061519fdffa432"
+  },
+  {
+    "reference": 56892,
+    "full_names": [],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-30) | SanctionsProgram: IRGC | SanctionsType: Block | LegalAuthority: Executive Order 13553 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1973,
+    "listed": 1769731200000,
+    "source": "OFAC",
+    "md5": "eb88c18daff0ecf34478409fbe2a6836"
+  },
+  {
+    "reference": 56893,
+    "full_names": [],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-30) | SanctionsProgram: IRAN-HR | SanctionsType: Block | LegalAuthority: Executive Order 13553 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1962,
+    "listed": 1769731200000,
+    "source": "OFAC",
+    "md5": "d5d0fe20dcfe770509cf040fee80d59e"
+  },
+  {
+    "reference": 56894,
+    "full_names": [
+      "Ghorban Mohammad VALIZADEH SHARAK"
+    ],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-30) | SanctionsProgram: IRGC | SanctionsType: Block | LegalAuthority: Executive Order 13553 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1974,
+    "listed": 1769731200000,
+    "source": "OFAC",
+    "md5": "5bee860b6183896ac5b7517b315c8f5f"
+  },
+  {
+    "reference": 56896,
+    "full_names": [
+      "DIAKO IC VE DIS TICARET ANONIM SIRKETI"
+    ],
+    "country": "Turkey",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "6cd47f151ebcd6b00bd20ec152bedc6d"
+  },
+  {
+    "reference": 56897,
+    "full_names": [
+      "GAZ CRYSTAL"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "7e32e246957465899801da4c9a5a52e7"
+  },
+  {
+    "reference": 56898,
+    "full_names": [
+      "MHK SHIPPING CORP"
+    ],
+    "country": "Turkey",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "e71ae5c2f0980ef96f0a4d22c892ff3b"
+  },
+  {
+    "reference": 56899,
+    "full_names": [
+      "VICENS MARINE CO"
+    ],
+    "country": "Marshall Islands",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "45cb72b2c8e8ae16dc18c452db6ebdb8"
+  },
+  {
+    "reference": 56900,
+    "full_names": [
+      "GAS RIVER"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "4312e77e67166f732ac72eae808f61ca"
+  },
+  {
+    "reference": 56901,
+    "full_names": [
+      "STAREX DIS TICARET KIMYA ANONIM SIRKETI"
+    ],
+    "country": "Turkey",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "657d7e112008e694f73477ddf371c68c"
+  },
+  {
+    "reference": 56902,
+    "full_names": [
+      "AQUA LIVE"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "90bd185bd17c2f81efd9726c5ad5dba7"
+  },
+  {
+    "reference": 56903,
+    "full_names": [
+      "BAKHT AL AZHAR TRADING L.L.C"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "420e935d84c6471a850cd17cd19bc4fd"
+  },
+  {
+    "reference": 56904,
+    "full_names": [
+      "Eskandar MOMENI KALAGARI"
+    ],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-01-30) | SanctionsProgram: IRAN-HR | SanctionsType: Block | LegalAuthority: Executive Order 13553 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1963,
+    "listed": 1769731200000,
+    "source": "OFAC",
+    "md5": "d6a9e4fa904e562957c6af1eef89e00b"
+  },
+  {
+    "reference": 56905,
+    "full_names": [
+      "FORTUNE GAS"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "3a27b70d40e3208e527787f1071875b1"
+  },
+  {
+    "reference": 56907,
+    "full_names": [
+      "SHANGHAI QIZHANG SHIP MANAGEMENT CO. LTD."
+    ],
+    "country": "China",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "a70a7d7f265d41e57a9a07371b6d2329"
+  },
+  {
+    "reference": 56909,
+    "full_names": [
+      "YONGHENG OCEAN"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "fc83db199f9bd550bf4cd11d81916e16"
+  },
+  {
+    "reference": 56910,
+    "full_names": [
+      "ALL WIN SHIPPING MANAGEMENT LIMITED"
+    ],
+    "country": "China",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "617b53ead86dfd8c83f27e4d2c602406"
+  },
+  {
+    "reference": 56911,
+    "full_names": [
+      "AMON KIMYA VE MAKINA SANAYI VE TICARET LIMITED SIRKETI",
+      "AMON KIMYA VE MAKINE SAN. TIC. LTD. STI"
+    ],
+    "country": "Turkey",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "c6d4f7f9aaa02ab047ae983e88f33c71"
+  },
+  {
+    "reference": 56912,
+    "full_names": [
+      "ELYSIAN HORIZON CORP"
+    ],
+    "country": "Seychelles",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "8f6e84cf163ceb7e70f76d20aba79fd3"
+  },
+  {
+    "reference": 56913,
+    "full_names": [
+      "VICSCENE",
+      "GLOBAL HARVEST"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "3b570fa9f788c6adef0f300d22f6f7e9"
+  },
+  {
+    "reference": 56914,
+    "full_names": [
+      "Mehmet OZSUREN"
+    ],
+    "country": "United Kingdom",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1960,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "1ea75c053f750142e41eb8e3f75f8152"
+  },
+  {
+    "reference": 56915,
+    "full_names": [
+      "ZEVS"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "927c5391e73352b92648e4ca2abb85ec"
+  },
+  {
+    "reference": 56916,
+    "full_names": [
+      "MARS OCEANWAY INC"
+    ],
+    "country": "Turkey",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "e77dd01edd937d819eee4803dd68aa17"
+  },
+  {
+    "reference": 56917,
+    "full_names": [
+      "OCEAN GUARDIAN"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "e941d94240f173ed578eb608fa23d705"
+  },
+  {
+    "reference": 56918,
+    "full_names": [
+      "WHITE SHARK"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "5be3aa743f9b048d0d0da8ea7af4dc2e"
+  },
+  {
+    "reference": 56919,
+    "full_names": [
+      "FLUXUS MARINE INC"
+    ],
+    "country": "Kazakhstan",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "11ba8e50d6343e9da5cdefaa811d39a9"
+  },
+  {
+    "reference": 56920,
+    "full_names": [
+      "AL SAFA"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "141e2807015d5d27419f68628de23981"
+  },
+  {
+    "reference": 56921,
+    "full_names": [
+      "VETER"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "3c2f74d1b87471923953a48f19c58523"
+  },
+  {
+    "reference": 56922,
+    "full_names": [],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "ced3d4dbe68965d23fbeeab357551518"
+  },
+  {
+    "reference": 56923,
+    "full_names": [
+      "QINGDAO OCEAN KIMO SHIP MANAGEMENT CO LTD"
+    ],
+    "country": "China",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "0358c6d47893cd0d6f135fd58a5f8c39"
+  },
+  {
+    "reference": 56924,
+    "full_names": [
+      "BENLAI"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "0e2d0f22ee867830719ffb1c80a6d20d"
+  },
+  {
+    "reference": 56925,
+    "full_names": [
+      "RAYYAN GAS"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "6ee622a13076179afe33514c7c9bd707"
+  },
+  {
+    "reference": 56926,
+    "full_names": [
+      "ELEVATE MARINE MANAGEMENT PRIVATE LIMITED",
+      "ELEVATE MARINE MANAGEMENT PVT"
+    ],
+    "country": "India",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "633079708c10dc4ca8598c1d0b65f8c0"
+  },
+  {
+    "reference": 56927,
+    "full_names": [
+      "BENEDICT"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "a23a4c93bfea9bbf481f7c583e83dd89"
+  },
+  {
+    "reference": 56928,
+    "full_names": [
+      "RWANDA DEFENCE FORCE",
+      "RDF"
+    ],
+    "country": "Rwanda",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-03-02) | SanctionsProgram: DRCONGO | SanctionsType: Block | LegalAuthority: Executive Order 13413 &amp;&amp;#35;40;DRC&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1772409600000,
+    "source": "OFAC",
+    "md5": "8df3a891a8d0bbee18c5291f87dde050"
+  },
+  {
+    "reference": 56929,
+    "full_names": [
+      "Akash Anant SHINDE"
+    ],
+    "country": "India",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-06) | SanctionsProgram: IRAN-EO13846 | SanctionsType: Block | LegalAuthority: Executive Order 13846 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 2000,
+    "listed": 1770336000000,
+    "source": "OFAC",
+    "md5": "6ece091a0394974c75bb74d913a0b019"
+  },
+  {
+    "reference": 56930,
+    "full_names": [
+      "Andrey Viktorovich BORISOV"
+    ],
+    "country": "Russia",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-10) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1978,
+    "listed": 1770681600000,
+    "source": "OFAC",
+    "md5": "89df6b4e2b85689de84712757975e7a8"
+  },
+  {
+    "reference": 56931,
+    "full_names": [
+      "PLATINUM GROUP INTERNATIONAL DIS TICARET LIMITED SIRKETI"
+    ],
+    "country": "Turkey",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-10) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770681600000,
+    "source": "OFAC",
+    "md5": "1fadfc576265733528b7e644c5822f3e"
+  },
+  {
+    "reference": 56932,
+    "full_names": [
+      "SEA SURF SHIPPING LIMITED"
+    ],
+    "country": "Turkey",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-10) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770681600000,
+    "source": "OFAC",
+    "md5": "fd3d0d3e7bfa6072089edfb90b8468c2"
+  },
+  {
+    "reference": 56933,
+    "full_names": [
+      "BRILLIANCE MARITIME VENTURES S.A."
+    ],
+    "country": "Panama",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-10) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770681600000,
+    "source": "OFAC",
+    "md5": "be9bd8a39a7f93f73838241b36ec62bb"
+  },
+  {
+    "reference": 56934,
+    "full_names": [
+      "LARA"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-10) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770681600000,
+    "source": "OFAC",
+    "md5": "2e4631ee525005d962a8082f47279027"
+  },
+  {
+    "reference": 56935,
+    "full_names": [
+      "BRILLIANCE"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-10) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770681600000,
+    "source": "OFAC",
+    "md5": "2d0c48f725d88dbed2cb717927002696"
+  },
+  {
+    "reference": 56936,
+    "full_names": [
+      "Mohamed MAJED"
+    ],
+    "country": "Lebanon",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-10) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": 1989,
+    "listed": 1770681600000,
+    "source": "OFAC",
+    "md5": "75f4a0f0d3a5b6377ab92c86f5c5e9fc"
+  },
+  {
+    "reference": 56937,
+    "full_names": [
+      "JOOD SARL",
+      "JUD"
+    ],
+    "country": "Lebanon",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-10) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: Executive Order 13224 &amp;&amp;#35;40;Terrorism&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1770681600000,
+    "source": "OFAC",
+    "md5": "c1723fecaf44f97f6a49b75af57a2a28"
+  },
+  {
+    "reference": 56970,
+    "full_names": [
+      "ADAK PARGAS PARS TRADING COMPANY"
+    ],
+    "country": "Iran",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: NPWMD | SanctionsType: Block | LegalAuthority: Executive Order 13382 &amp;&amp;#35;40;Non-proliferation&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "09218287dc048e431021f7846b94233c"
+  },
+  {
+    "reference": 56971,
+    "full_names": [
+      "MOSTAFA ROKNIFARD PRIME CHOICE GENERAL TRADING LLC",
+      "MOSTAFA ROKNIFARD PERFUMES AND COSMETICS TRADING LLC"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: NPWMD | SanctionsType: Block | LegalAuthority: Executive Order 13382 &amp;&amp;#35;40;Non-proliferation&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "3b960b85ba621cf9eb8a573d61dbdf78"
+  },
+  {
+    "reference": 56990,
+    "full_names": [
+      "Sergei Sergeevich ZELENYUK",
+      "Sergey Sergeevich ZELENYUK",
+      "SRGSRGSRG111",
+      "MORTENOIR"
+    ],
+    "country": "Russia",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-24) | SanctionsProgram: CAATSA - RUSSIA | SanctionsType: Block | LegalAuthority: PAIPA",
+    "birth_year": 1994,
+    "listed": 1771891200000,
+    "source": "OFAC",
+    "md5": "943a2ac4ff2ef45d9557ffa9dbb74641"
+  },
+  {
+    "reference": 56991,
+    "full_names": [
+      "OPERATION ZERO",
+      "OPZERO",
+      "LLC MATRITSA",
+      "MATRIX LIMITED"
+    ],
+    "country": "Russia",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-24) | SanctionsProgram: CAATSA - RUSSIA | SanctionsType: Block | LegalAuthority: PAIPA",
+    "birth_year": null,
+    "listed": 1771891200000,
+    "source": "OFAC",
+    "md5": "5716cd79bcf41fb72c583c0a950e9e30"
+  },
+  {
+    "reference": 56992,
+    "full_names": [
+      "SPECIAL TECHNOLOGY SERVICES LLC FZ"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-24) | SanctionsProgram: CAATSA - RUSSIA | SanctionsType: Block | LegalAuthority: PAIPA",
+    "birth_year": null,
+    "listed": 1771891200000,
+    "source": "OFAC",
+    "md5": "ad356d6bf66c58a3bd2ce466d2db624a"
+  },
+  {
+    "reference": 56993,
+    "full_names": [
+      "Marina Yevgenyevna VASANOVICH"
+    ],
+    "country": "Russia",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-24) | SanctionsProgram: CAATSA - RUSSIA | SanctionsType: Block | LegalAuthority: Executive Order 14306 &amp;&amp;#35;40;Cyber&amp;&amp;#35;41;",
+    "birth_year": 2003,
+    "listed": 1771891200000,
+    "source": "OFAC",
+    "md5": "03db1f1070153edab0737eda1fa9d282"
+  },
+  {
+    "reference": 56994,
+    "full_names": [
+      "Azizjon Makhmudovich MAMASHOYEV",
+      "Azizjon Maxmudovich MAMASHOYEV"
+    ],
+    "country": "Uzbekistan",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-24) | SanctionsProgram: CAATSA - RUSSIA | SanctionsType: Block | LegalAuthority: Executive Order 14306 &amp;&amp;#35;40;Cyber&amp;&amp;#35;41;",
+    "birth_year": 1987,
+    "listed": 1771891200000,
+    "source": "OFAC",
+    "md5": "0de3126261dff819ae5b574debf0a6ac"
+  },
+  {
+    "reference": 56995,
+    "full_names": [
+      "Oleg Vyacheslavovich KUCHEROV",
+      "GABR"
+    ],
+    "country": "Russia",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-24) | SanctionsProgram: CAATSA - RUSSIA | SanctionsType: Block | LegalAuthority: Executive Order 14306 &amp;&amp;#35;40;Cyber&amp;&amp;#35;41;",
+    "birth_year": 1973,
+    "listed": 1771891200000,
+    "source": "OFAC",
+    "md5": "6ae6430e6363da70be9187e44fc672f9"
+  },
+  {
+    "reference": 56996,
+    "full_names": [
+      "ADVANCE SECURITY SOLUTIONS",
+      "ADVANCED SECURITY SOLUTIONS"
+    ],
+    "country": "United Arab Emirates",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-24) | SanctionsProgram: CAATSA - RUSSIA | SanctionsType: Block | LegalAuthority: Executive Order 14306 &amp;&amp;#35;40;Cyber&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771891200000,
+    "source": "OFAC",
+    "md5": "171c61bcb6f4f44e666dfc47d8b56c20"
+  },
+  {
+    "reference": 56997,
+    "full_names": [
+      "BEHENGAM TADBEER QESHM SHIPPING COMPANY"
+    ],
+    "country": "Iran",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "e0227ac2408c89a492dd8756dc027a38"
+  },
+  {
+    "reference": 56998,
+    "full_names": [
+      "ATEELA 1"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "8ce651acf2274c919e407eafedc5f0ff"
+  },
+  {
+    "reference": 56999,
+    "full_names": [
+      "ATEELA 2"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "445cf15104411dfd2ac44714e36b2621"
+  },
+  {
+    "reference": 57001,
+    "full_names": [
+      "POROS MARITIME VENTURES S.A."
+    ],
+    "country": "Panama",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "c5905b074082a0ce00fc496b7aa4b2c3"
+  },
+  {
+    "reference": 57002,
+    "full_names": [
+      "OCEAN KUDOS SHIPPING COMPANY LIMITED"
+    ],
+    "country": "Marshall Islands",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "d11a05248b48b03a5df7b630e7940524"
+  },
+  {
+    "reference": 57003,
+    "full_names": [
+      "MISTRAL FLEET CO LTD",
+      "MISTRAL FLEET COMPANY LIMITED"
+    ],
+    "country": "Virgin Islands, British",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "e817b5d115f676413a60886b32cd4a3f"
+  },
+  {
+    "reference": 57004,
+    "full_names": [
+      "VAST MARINE INC",
+      "VAST MARINE INCORPORATED"
+    ],
+    "country": "Liberia",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "adfb0c9cb0e5af329af399a025fafe69"
+  },
+  {
+    "reference": 57005,
+    "full_names": [
+      "HOOT"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "71d52a1d98bdac2b1ef4e46e8bc20046"
+  },
+  {
+    "reference": 57006,
+    "full_names": [
+      "REMIZ"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "af47e380c4df669586ec108ac883dcbe"
+  },
+  {
+    "reference": 57007,
+    "full_names": [
+      "DANUTA I"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "d600b5cb9f36f8a024e4e58caaefeff0"
+  },
+  {
+    "reference": 57008,
+    "full_names": [
+      "ALAA"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "8b4675c8f2c2617046f10eeeb7011fab"
+  },
+  {
+    "reference": 57009,
+    "full_names": [
+      "GAS FATE"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "90d373360b031f0c792e73a54a42313b"
+  },
+  {
+    "reference": 57010,
+    "full_names": [
+      "NYR SHIPPING CO."
+    ],
+    "country": "Marshall Islands",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "fb4337427fb86019acc10d1a2b17c42d"
+  },
+  {
+    "reference": 57011,
+    "full_names": [
+      "KAITO NAVIGATION SA"
+    ],
+    "country": "Liberia",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "6ac34126b3b517f170cf3944bcb78f0f"
+  },
+  {
+    "reference": 57012,
+    "full_names": [
+      "ITHAKI MARITIME AND TRADING S.A."
+    ],
+    "country": "Panama",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "52a572c51b7ccd43016d16111907f4f0"
+  },
+  {
+    "reference": 57013,
+    "full_names": [
+      "GOLDWAVE MARITIME SERVICES INC"
+    ],
+    "country": "Marshall Islands",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "4fa8c692879cc020f965f2b4d9e95f92"
+  },
+  {
+    "reference": 57014,
+    "full_names": [
+      "OCEAN KOI"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "806a3006dcb49a533608c698b9caa8dd"
+  },
+  {
+    "reference": 57015,
+    "full_names": [
+      "NORTH STAR"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "fbe6eee1c5a84078ef25a707d0d12081"
+  },
+  {
+    "reference": 57016,
+    "full_names": [
+      "FELICITA"
+    ],
+    "country": "",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-EO13902 | SanctionsType: Block | LegalAuthority: Executive Order 13902 &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "f619d51f13bfc68ed3328447964339b9"
+  },
+  {
+    "reference": 57017,
+    "full_names": [
+      "ABU SHOK",
+      "ABANSHUK",
+      "ABU NSHOUK"
+    ],
+    "country": "Sudan",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SUDAN-EO14098 | SanctionsType: Block | LegalAuthority: Executive Order 14098 &amp;&amp;#35;40;Sudan&amp;&amp;#35;41;",
+    "birth_year": 1970,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "0e362c319be901e804ec540efdbbed75"
+  },
+  {
+    "reference": 57020,
+    "full_names": [
+      "Tijani Ibrahim Moussa MOHAMED",
+      "AL ZEIR SALEM",
+      "AL ZEER SALEM"
+    ],
+    "country": "Sudan",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SUDAN-EO14098 | SanctionsType: Block | LegalAuthority: Executive Order 14098 &amp;&amp;#35;40;Sudan&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "1ec7810bca03745f9dc7e4d85ed6696f"
+  },
+  {
+    "reference": 57021,
+    "full_names": [
+      "Elfateh Abdullah Idris ADAM",
+      "Al-Fateh Abdullah IDRIS",
+      "ISSA ABU LULU",
+      "ABU LULU"
+    ],
+    "country": "Sudan",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-19) | SanctionsProgram: SUDAN-EO14098 | SanctionsType: Block | LegalAuthority: Executive Order 14098 &amp;&amp;#35;40;Sudan&amp;&amp;#35;41;",
+    "birth_year": null,
+    "listed": 1771459200000,
+    "source": "OFAC",
+    "md5": "1057e4ece75277bd1fae4ac702178c81"
+  },
+  {
+    "reference": 57050,
+    "full_names": [
+      "Mohammad ABEDINI"
+    ],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-CON-ARMS-EO | SanctionsType: Block | LegalAuthority: Executive Order - Convential Arms &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1995,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "8ad1c0a67bf8486bc407983b9d5eefe4"
+  },
+  {
+    "reference": 57051,
+    "full_names": [
+      "Mehdi ZAND"
+    ],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-CON-ARMS-EO | SanctionsType: Block | LegalAuthority: Executive Order - Convential Arms &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1986,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "05b2c44242c8045c33cd9bdd7f6220bf"
+  },
+  {
+    "reference": 57052,
+    "full_names": [
+      "Mehrdad JAFARI"
+    ],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-CON-ARMS-EO | SanctionsType: Block | LegalAuthority: Executive Order - Convential Arms &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1986,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "f89357c8edeae745ebb7625b9be4df2e"
+  },
+  {
+    "reference": 57053,
+    "full_names": [
+      "Ebrahim SHARIATZADEH"
+    ],
+    "country": "Iran",
+    "entity_type": "Individual",
+    "comments": "SanctionsList: SDN List (Published: 2026-02-25) | SanctionsProgram: IRAN-CON-ARMS-EO | SanctionsType: Block | LegalAuthority: Executive Order - Convential Arms &amp;&amp;#35;40;Iran&amp;&amp;#35;41;",
+    "birth_year": 1985,
+    "listed": 1771977600000,
+    "source": "OFAC",
+    "md5": "edd6c86c80ddae5787685f6a0df62aa5"
+  },
+  {
+    "reference": 57109,
+    "full_names": [
+      "MUSLIM BROTHERHOOD IN SUDAN",
+      "SUDANESE ISLAMIC MOVEMENT"
+    ],
+    "country": "Sudan",
+    "entity_type": "Institution",
+    "comments": "SanctionsList: SDN List (Published: 2026-03-09) | SanctionsProgram: SDGT | SanctionsType: Block | LegalAuthority: INA",
+    "birth_year": null,
+    "listed": 1773014400000,
+    "source": "OFAC",
+    "md5": "ac6e34e595589e79bf02f4d5ca57fb0f"
   }
 ]

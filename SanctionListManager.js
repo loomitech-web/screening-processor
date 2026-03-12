@@ -17,7 +17,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default class SanctionListManager {
-  constructor(redis, db, log ) {
+  constructor(redis, db, log) {
     this.redis = redis;
     this.db = db;
     this.log = log;
@@ -35,24 +35,24 @@ export default class SanctionListManager {
           secureOptions: constants.SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION
         }
       },
-      "EUFinancialSanctions": {
-        url: "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList/content?token=dG9rZW4tMjAxNw",
-        options: {
-          rejectUnauthorized: false,
-        }
-      },
-      "OFAC": {
-        url: "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN_ENHANCED.XML",
-        options: {
-          rejectUnauthorized: false,
-          headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Accept': 'application/xml, text/xml, */*',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Accept-Encoding': 'gzip, deflate, br'
-          }
-        }
-      }
+      // "EUFinancialSanctions": {
+      //   url: "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList/content?token=dG9rZW4tMjAxNw",
+      //   options: {
+      //     rejectUnauthorized: false,
+      //   }
+      // },
+      // "OFAC": {
+      //   url: "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN_ENHANCED.XML",
+      //   options: {
+      //     rejectUnauthorized: false,
+      //     headers: {
+      //       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+      //       'Accept': 'application/xml, text/xml, */*',
+      //       'Accept-Language': 'en-US,en;q=0.9',
+      //       'Accept-Encoding': 'gzip, deflate, br'
+      //     }
+      //   }
+      // }
     };
 
     this.fileWatcher = null;
@@ -225,7 +225,7 @@ export default class SanctionListManager {
         name = String(name);
       }
     }
-    
+
     try {
       // Replace commas with spaces
       name = name.replace(/,/g, ' ');
@@ -244,411 +244,411 @@ export default class SanctionListManager {
 
   }
 
-  async parseEUFinancialSanctions(json) {
-    this.log.info("Processing EU Financial Sanctions list data");   
-    var list = [];
-
-    if (!json) {
-      throw new Error("No data received from EU Financial Sanctions API");
-    }
-
-    try {
-      // Check if we have the expected structure
-      if (!json || !json.export) {
-        return list;
-      }
-
-      // Check if we have sanctionEntity in the export
-      if (!json.export.sanctionEntity) {
-        return list;
-      }
-
-      // Ensure sanctionEntity is an array
-      const entities = Array.isArray(json.export.sanctionEntity) ? json.export.sanctionEntity : [json.export.sanctionEntity];
-
-      entities.forEach(entity => {
-        try {
-          // Entity fields
-          const entityType = entity.subjectType?.code || '';
-          const classificationCode = entity.subjectType?.classificationCode || '';
-          const logicalId = entity.logicalId || '';
-          const remark = entity.remark || '';
-
-          // Regulation array
-          const regulation = entity.regulation ? {
-            regulationType: entity.regulation.regulationType || '',
-            publicationDate: entity.regulation.publicationDate || '',
-            numberTitle: entity.regulation.numberTitle || '',
-            programme: entity.regulation.programme || ''
-          } : {};
-
-          // Array to store all full names including aliases
-          let fullNames = [];
-
-          // Process name aliases array
-          if (entity.nameAlias) {
-            const nameAliases = Array.isArray(entity.nameAlias) ? entity.nameAlias : [entity.nameAlias];
-            nameAliases.forEach(nameObj => {
-              const firstName = nameObj.firstName || '';
-              const middleName = nameObj.middleName || '';
-              const lastName = nameObj.lastName || '';
-              const wholeName = nameObj.wholeName || '';
-              const nameLogicalId = nameObj.logicalId || '';
-              const nameFunction = nameObj.function || '';
-
-              // Construct full name with all name parts
-              let fullName = '';
-
-              // If wholeName is provided, use it
-              if (wholeName) {
-                fullName = wholeName;
-              } else {
-                // Otherwise construct from parts
-                fullName = [firstName, middleName, lastName]
-                  .filter(part => part && typeof part === 'string' && part.trim() !== '')
-                  .join(' ');
-              }
-
-              // Format the name: remove commas and ensure spaces between words
-              fullName = this.formatName(fullName);
-
-              // Add the full name to the array if it's not empty and not already included
-              if (fullName && !fullNames.includes(fullName)) {
-                fullNames.push(fullName);
-              }
-            });
-          }
-
-          // Get country information
-          const country = entity.citizenship?.countryDescription || '';
-          const countryCode = entity.citizenship?.countryIso2Code || '';
-
-          // Get birth information
-          let birthYear = entity.birthdate && entity.birthdate[0]?.year || '';
-          birthYear = birthYear.length > 0 ? parseInt(birthYear) : null;
-          const birthPlace = entity.birthdate && entity.birthdate[0]?.city || '';
-
-          // Create a record for this entity
-          const record = {
-            reference: logicalId,
-            full_names: fullNames, // Array of all full names including aliases
-            country: country,
-            birth_year: birthYear,
-            entity_type: entityType === 'person' ? 'Individual' : 'Institution',
-            comments: remark,
-            listed: new Date(regulation.publicationDate).getTime(),
-            source: 'EUFinancialSanctions'
-          };
-
-          list.push(record);
-        } catch (entityError) {
-          console.error("Error processing EU Financial Sanctions entity:", entityError);
-        }
-      });
-    } catch (error) {
-      console.error("Error processing EU Financial Sanctions data:", error);
-      throw error;
-    }
-
-    return this.hashList(list);
-  }
-
-  parseOFAC(json) {
-    var list = [];
-
-    if (!json) {
-      throw new Error("No data received from OFAC API");
-    }
-
-    try {
-      if (json.sanctionsData && json.sanctionsData.entities && json.sanctionsData.entities.entity) {
-        const entities = Array.isArray(json.sanctionsData.entities.entity)
-          ? json.sanctionsData.entities.entity
-          : [json.sanctionsData.entities.entity];
-
-        entities.forEach(entity => {
-          try {
-            // Get basic entity information
-            const entityId = entity.id || '';
-
-            // Get entity type
-            let entityType = 'Unknown';
-            if (entity.generalInfo && entity.generalInfo.entityType && entity.generalInfo.entityType.$t) {
-              entityType = entity.generalInfo.entityType.$t === 'Individual' ? 'Individual' : 'Institution';
-            }
-
-            // Array to store all full names including aliases
-            let fullNames = [];
-
-            // Process all names (both primary and aliases)
-            if (entity.names && entity.names.name) {
-              const namesArray = Array.isArray(entity.names.name) ? entity.names.name : [entity.names.name];
-
-              namesArray.forEach(name => {
-                if (name.translations && name.translations.translation) {
-                  const translation = name.translations.translation;
-
-                  // Get the full name from the translation
-                  let fullName = '';
-
-                  // For individuals, we might have first/last name
-                  if (entityType === 'Individual' && translation.formattedFirstName) {
-                    // Get all name parts
-                    const firstName = translation.formattedFirstName || '';
-                    const lastName = translation.formattedLastName || '';
-
-                    // Construct full name with all name parts
-                    fullName = [firstName, lastName]
-                      .filter(part => part && typeof part === 'string' && part.trim() !== '')
-                      .join(' ');
-                  } else {
-                    // For entities or when there's no specific first/last name
-                    fullName = translation.formattedFullName || translation.formattedLastName || '';
-                  }
-
-                  // If no formatted full name, try to construct from name parts
-                  if (!fullName && translation.nameParts && translation.nameParts.namePart) {
-                    const nameParts = Array.isArray(translation.nameParts.namePart) ?
-                      translation.nameParts.namePart : [translation.nameParts.namePart];
-
-                    // Extract all name parts in order
-                    const nameValues = nameParts.map(part => part.value);
-
-                    // Construct full name with all name parts
-                    fullName = nameValues.join(' ');
-                  }
-
-                  // Format the name: remove commas and ensure spaces between words
-                  fullName = this.formatName(fullName);
-
-                  // Add the full name to the array if it's not empty and not already included
-                  if (fullName && !fullNames.includes(fullName)) {
-                    fullNames.push(fullName);
-                  }
-                }
-              });
-            }
-
-            // Process aliases if they exist
-            if (entity.aliases && entity.aliases.alias) {
-              const aliasArray = Array.isArray(entity.aliases.alias) ? entity.aliases.alias : [entity.aliases.alias];
-
-              aliasArray.forEach(alias => {
-                if (alias.translations && alias.translations.translation) {
-                  const translation = alias.translations.translation;
-
-                  // Get the alias name from the translation
-                  let aliasName = '';
-
-                  // For individuals, we might have first/last name
-                  if (entityType === 'Individual' && translation.formattedFirstName) {
-                    // Get all name parts
-                    const firstName = translation.formattedFirstName || '';
-                    const lastName = translation.formattedLastName || '';
-
-                    // Construct alias name with all name parts
-                    aliasName = [firstName, lastName]
-                      .filter(part => part && typeof part === 'string' && part.trim() !== '')
-                      .join(' ');
-                  } else {
-                    // For entities or when there's no specific first/last name
-                    aliasName = translation.formattedFullName || translation.formattedLastName || '';
-                  }
-
-                  // If no formatted full name, try to construct from name parts
-                  if (!aliasName && translation.nameParts && translation.nameParts.namePart) {
-                    const nameParts = Array.isArray(translation.nameParts.namePart) ?
-                      translation.nameParts.namePart : [translation.nameParts.namePart];
-
-                    // Extract all name parts in order
-                    const nameValues = nameParts.map(part => part.value);
-
-                    // Construct alias name with all name parts
-                    aliasName = nameValues.join(' ');
-                  }
-
-                  // Format the alias name: remove commas and ensure spaces between words
-                  aliasName = this.formatName(aliasName);
-
-                  // Add the alias name to the array if it's not empty and not already included
-                  if (aliasName && !fullNames.includes(aliasName)) {
-                    fullNames.push(aliasName);
-                  }
-                }
-              });
-            }
-
-            // Get country information
-            let country = '';
-            let cityOrAddress = '';
-
-            if (entity.addresses && entity.addresses.address) {
-              const addressArray = Array.isArray(entity.addresses.address) ?
-                entity.addresses.address : [entity.addresses.address];
-
-              // Use the first address
-              const address = addressArray[0];
-
-              if (address.country && address.country.$t) {
-                country = address.country.$t;
-              }
-
-              // Try to get city or other address parts
-              if (address.translations && address.translations.translation &&
-                address.translations.translation.addressParts &&
-                address.translations.translation.addressParts.addressPart) {
-
-                const addressParts = Array.isArray(address.translations.translation.addressParts.addressPart) ?
-                  address.translations.translation.addressParts.addressPart :
-                  [address.translations.translation.addressParts.addressPart];
-
-                // Join address parts or find city part
-                const cityPart = addressParts.find(part =>
-                  part.type && part.type.$t === 'CITY');
-
-                if (cityPart) {
-                  cityOrAddress = cityPart.value;
-                } else {
-                  cityOrAddress = addressParts.map(part => part.value).join(', ');
-                }
-              }
-            }
-
-            // Create an object to store remarks information
-            let remarksObj = {};
-
-            // Get title information
-            if (entity.generalInfo && entity.generalInfo.title && entity.generalInfo.title.$t) {
-              remarksObj["Title"] = entity.generalInfo.title.$t;
-            }
-
-            // Get sanctions list information
-            if (entity.sanctionsLists && entity.sanctionsLists.sanctionsList) {
-              const sanctionsListArray = Array.isArray(entity.sanctionsLists.sanctionsList)
-                ? entity.sanctionsLists.sanctionsList
-                : [entity.sanctionsLists.sanctionsList];
-
-              sanctionsListArray.forEach(list => {
-                if (list.$t) {
-                  const datePublished = list.datePublished ? ` (Published: ${list.datePublished})` : '';
-                  remarksObj["SanctionsList"] = `${list.$t}${datePublished}`;
-                }
-              });
-            }
-
-            // Get sanctions program information
-            if (entity.sanctionsPrograms && entity.sanctionsPrograms.sanctionsProgram) {
-              const sanctionsProgramArray = Array.isArray(entity.sanctionsPrograms.sanctionsProgram)
-                ? entity.sanctionsPrograms.sanctionsProgram
-                : [entity.sanctionsPrograms.sanctionsProgram];
-
-              sanctionsProgramArray.forEach(program => {
-                if (program.$t) {
-                  remarksObj["SanctionsProgram"] = program.$t;
-                }
-              });
-            }
-
-            // Get sanctions type information
-            if (entity.sanctionsTypes && entity.sanctionsTypes.sanctionsType) {
-              const sanctionsTypeArray = Array.isArray(entity.sanctionsTypes.sanctionsType)
-                ? entity.sanctionsTypes.sanctionsType
-                : [entity.sanctionsTypes.sanctionsType];
-
-              sanctionsTypeArray.forEach(type => {
-                if (type.$t) {
-                  remarksObj["SanctionsType"] = type.$t;
-                }
-              });
-            }
-
-            // Get legal authority information
-            if (entity.legalAuthorities && entity.legalAuthorities.legalAuthority) {
-              const legalAuthorityArray = Array.isArray(entity.legalAuthorities.legalAuthority)
-                ? entity.legalAuthorities.legalAuthority
-                : [entity.legalAuthorities.legalAuthority];
-
-              legalAuthorityArray.forEach(authority => {
-                if (authority.$t) {
-                  remarksObj["LegalAuthority"] = authority.$t;
-                }
-              });
-            }
-
-            // Variables to store birthday and date added information
-            let birthday = '';
-            let dateAdded = '';
-
-            // Get birthdate information
-            if (entity.features && entity.features.feature) {
-              const featureArray = Array.isArray(entity.features.feature)
-                ? entity.features.feature
-                : [entity.features.feature];
-
-              featureArray.forEach(feature => {
-                if (feature.type && feature.type.$t === 'Birthdate' && feature.value) {
-                  birthday = feature.value;
-                  // Birthdate information is not added to remarks
-
-                  // Add date range information if available
-                  if (feature.valueDate) {
-                    const fromDate = feature.valueDate.fromDateBegin || '';
-                    const toDate = feature.valueDate.toDateBegin || '';
-                    const isApproximate = feature.valueDate.isApproximate === 'true' ? ' (Approximate)' : '';
-
-                    if (fromDate && toDate && fromDate === toDate) {
-                      // Birthdate range information is not added to remarks
-                    } else if (fromDate && toDate) {
-                      // Birthdate range information is not added to remarks
-                    }
-                  }
-                }
-              });
-            }
-
-            // Get date added information from sanctions list
-            if (entity.sanctionsLists && entity.sanctionsLists.sanctionsList) {
-              const sanctionsListArray = Array.isArray(entity.sanctionsLists.sanctionsList)
-                ? entity.sanctionsLists.sanctionsList
-                : [entity.sanctionsLists.sanctionsList];
-
-              if (sanctionsListArray.length > 0 && sanctionsListArray[0].datePublished) {
-                dateAdded = sanctionsListArray[0].datePublished;
-                // Date added information is not added to remarks
-              }
-            }
-
-            // Format remarks in a more readable way
-            let remarksStr = '';
-            for (const key in remarksObj) {
-              if (remarksStr) remarksStr += ' | ';
-              remarksStr += `${key}: ${remarksObj[key]}`;
-            }
-
-            const record = {
-              reference: entityId,
-              full_names: fullNames, // Array of all full names including aliases
-              country: country,
-              entity_type: entityType,
-              comments: remarksStr, // More readable format
-              birth_year: this.calculateBirthYear(birthday), // Add birthday as a separate field
-              listed: new Date(dateAdded).getTime(), // Add date added as a separate field
-              source: 'OFAC'
-            };
-
-            list.push(record);
-          } catch (entityError) {
-            console.error("Error processing OFAC entity:", entityError);
-          }
-        });
-      }
-    } catch (error) {
-      console.error("Error processing OFAC data:", error);
-      throw error;
-    }
-
-    return this.hashList(list);
-  }
+  // async parseEUFinancialSanctions(json) {
+  //   this.log.info("Processing EU Financial Sanctions list data");
+  //   var list = [];
+
+  //   if (!json) {
+  //     throw new Error("No data received from EU Financial Sanctions API");
+  //   }
+
+  //   try {
+  //     // Check if we have the expected structure
+  //     if (!json || !json.export) {
+  //       return list;
+  //     }
+
+  //     // Check if we have sanctionEntity in the export
+  //     if (!json.export.sanctionEntity) {
+  //       return list;
+  //     }
+
+  //     // Ensure sanctionEntity is an array
+  //     const entities = Array.isArray(json.export.sanctionEntity) ? json.export.sanctionEntity : [json.export.sanctionEntity];
+
+  //     entities.forEach(entity => {
+  //       try {
+  //         // Entity fields
+  //         const entityType = entity.subjectType?.code || '';
+  //         const classificationCode = entity.subjectType?.classificationCode || '';
+  //         const logicalId = entity.logicalId || '';
+  //         const remark = entity.remark || '';
+
+  //         // Regulation array
+  //         const regulation = entity.regulation ? {
+  //           regulationType: entity.regulation.regulationType || '',
+  //           publicationDate: entity.regulation.publicationDate || '',
+  //           numberTitle: entity.regulation.numberTitle || '',
+  //           programme: entity.regulation.programme || ''
+  //         } : {};
+
+  //         // Array to store all full names including aliases
+  //         let fullNames = [];
+
+  //         // Process name aliases array
+  //         if (entity.nameAlias) {
+  //           const nameAliases = Array.isArray(entity.nameAlias) ? entity.nameAlias : [entity.nameAlias];
+  //           nameAliases.forEach(nameObj => {
+  //             const firstName = nameObj.firstName || '';
+  //             const middleName = nameObj.middleName || '';
+  //             const lastName = nameObj.lastName || '';
+  //             const wholeName = nameObj.wholeName || '';
+  //             const nameLogicalId = nameObj.logicalId || '';
+  //             const nameFunction = nameObj.function || '';
+
+  //             // Construct full name with all name parts
+  //             let fullName = '';
+
+  //             // If wholeName is provided, use it
+  //             if (wholeName) {
+  //               fullName = wholeName;
+  //             } else {
+  //               // Otherwise construct from parts
+  //               fullName = [firstName, middleName, lastName]
+  //                 .filter(part => part && typeof part === 'string' && part.trim() !== '')
+  //                 .join(' ');
+  //             }
+
+  //             // Format the name: remove commas and ensure spaces between words
+  //             fullName = this.formatName(fullName);
+
+  //             // Add the full name to the array if it's not empty and not already included
+  //             if (fullName && !fullNames.includes(fullName)) {
+  //               fullNames.push(fullName);
+  //             }
+  //           });
+  //         }
+
+  //         // Get country information
+  //         const country = entity.citizenship?.countryDescription || '';
+  //         const countryCode = entity.citizenship?.countryIso2Code || '';
+
+  //         // Get birth information
+  //         let birthYear = entity.birthdate && entity.birthdate[0]?.year || '';
+  //         birthYear = birthYear.length > 0 ? parseInt(birthYear) : null;
+  //         const birthPlace = entity.birthdate && entity.birthdate[0]?.city || '';
+
+  //         // Create a record for this entity
+  //         const record = {
+  //           reference: logicalId,
+  //           full_names: fullNames, // Array of all full names including aliases
+  //           country: country,
+  //           birth_year: birthYear,
+  //           entity_type: entityType === 'person' ? 'Individual' : 'Institution',
+  //           comments: remark,
+  //           listed: new Date(regulation.publicationDate).getTime(),
+  //           source: 'EUFinancialSanctions'
+  //         };
+
+  //         list.push(record);
+  //       } catch (entityError) {
+  //         console.error("Error processing EU Financial Sanctions entity:", entityError);
+  //       }
+  //     });
+  //   } catch (error) {
+  //     console.error("Error processing EU Financial Sanctions data:", error);
+  //     throw error;
+  //   }
+
+  //   return this.hashList(list);
+  // }
+
+  // parseOFAC(json) {
+  //   var list = [];
+
+  //   if (!json) {
+  //     throw new Error("No data received from OFAC API");
+  //   }
+
+  //   try {
+  //     if (json.sanctionsData && json.sanctionsData.entities && json.sanctionsData.entities.entity) {
+  //       const entities = Array.isArray(json.sanctionsData.entities.entity)
+  //         ? json.sanctionsData.entities.entity
+  //         : [json.sanctionsData.entities.entity];
+
+  //       entities.forEach(entity => {
+  //         try {
+  //           // Get basic entity information
+  //           const entityId = entity.id || '';
+
+  //           // Get entity type
+  //           let entityType = 'Unknown';
+  //           if (entity.generalInfo && entity.generalInfo.entityType && entity.generalInfo.entityType.$t) {
+  //             entityType = entity.generalInfo.entityType.$t === 'Individual' ? 'Individual' : 'Institution';
+  //           }
+
+  //           // Array to store all full names including aliases
+  //           let fullNames = [];
+
+  //           // Process all names (both primary and aliases)
+  //           if (entity.names && entity.names.name) {
+  //             const namesArray = Array.isArray(entity.names.name) ? entity.names.name : [entity.names.name];
+
+  //             namesArray.forEach(name => {
+  //               if (name.translations && name.translations.translation) {
+  //                 const translation = name.translations.translation;
+
+  //                 // Get the full name from the translation
+  //                 let fullName = '';
+
+  //                 // For individuals, we might have first/last name
+  //                 if (entityType === 'Individual' && translation.formattedFirstName) {
+  //                   // Get all name parts
+  //                   const firstName = translation.formattedFirstName || '';
+  //                   const lastName = translation.formattedLastName || '';
+
+  //                   // Construct full name with all name parts
+  //                   fullName = [firstName, lastName]
+  //                     .filter(part => part && typeof part === 'string' && part.trim() !== '')
+  //                     .join(' ');
+  //                 } else {
+  //                   // For entities or when there's no specific first/last name
+  //                   fullName = translation.formattedFullName || translation.formattedLastName || '';
+  //                 }
+
+  //                 // If no formatted full name, try to construct from name parts
+  //                 if (!fullName && translation.nameParts && translation.nameParts.namePart) {
+  //                   const nameParts = Array.isArray(translation.nameParts.namePart) ?
+  //                     translation.nameParts.namePart : [translation.nameParts.namePart];
+
+  //                   // Extract all name parts in order
+  //                   const nameValues = nameParts.map(part => part.value);
+
+  //                   // Construct full name with all name parts
+  //                   fullName = nameValues.join(' ');
+  //                 }
+
+  //                 // Format the name: remove commas and ensure spaces between words
+  //                 fullName = this.formatName(fullName);
+
+  //                 // Add the full name to the array if it's not empty and not already included
+  //                 if (fullName && !fullNames.includes(fullName)) {
+  //                   fullNames.push(fullName);
+  //                 }
+  //               }
+  //             });
+  //           }
+
+  //           // Process aliases if they exist
+  //           if (entity.aliases && entity.aliases.alias) {
+  //             const aliasArray = Array.isArray(entity.aliases.alias) ? entity.aliases.alias : [entity.aliases.alias];
+
+  //             aliasArray.forEach(alias => {
+  //               if (alias.translations && alias.translations.translation) {
+  //                 const translation = alias.translations.translation;
+
+  //                 // Get the alias name from the translation
+  //                 let aliasName = '';
+
+  //                 // For individuals, we might have first/last name
+  //                 if (entityType === 'Individual' && translation.formattedFirstName) {
+  //                   // Get all name parts
+  //                   const firstName = translation.formattedFirstName || '';
+  //                   const lastName = translation.formattedLastName || '';
+
+  //                   // Construct alias name with all name parts
+  //                   aliasName = [firstName, lastName]
+  //                     .filter(part => part && typeof part === 'string' && part.trim() !== '')
+  //                     .join(' ');
+  //                 } else {
+  //                   // For entities or when there's no specific first/last name
+  //                   aliasName = translation.formattedFullName || translation.formattedLastName || '';
+  //                 }
+
+  //                 // If no formatted full name, try to construct from name parts
+  //                 if (!aliasName && translation.nameParts && translation.nameParts.namePart) {
+  //                   const nameParts = Array.isArray(translation.nameParts.namePart) ?
+  //                     translation.nameParts.namePart : [translation.nameParts.namePart];
+
+  //                   // Extract all name parts in order
+  //                   const nameValues = nameParts.map(part => part.value);
+
+  //                   // Construct alias name with all name parts
+  //                   aliasName = nameValues.join(' ');
+  //                 }
+
+  //                 // Format the alias name: remove commas and ensure spaces between words
+  //                 aliasName = this.formatName(aliasName);
+
+  //                 // Add the alias name to the array if it's not empty and not already included
+  //                 if (aliasName && !fullNames.includes(aliasName)) {
+  //                   fullNames.push(aliasName);
+  //                 }
+  //               }
+  //             });
+  //           }
+
+  //           // Get country information
+  //           let country = '';
+  //           let cityOrAddress = '';
+
+  //           if (entity.addresses && entity.addresses.address) {
+  //             const addressArray = Array.isArray(entity.addresses.address) ?
+  //               entity.addresses.address : [entity.addresses.address];
+
+  //             // Use the first address
+  //             const address = addressArray[0];
+
+  //             if (address.country && address.country.$t) {
+  //               country = address.country.$t;
+  //             }
+
+  //             // Try to get city or other address parts
+  //             if (address.translations && address.translations.translation &&
+  //               address.translations.translation.addressParts &&
+  //               address.translations.translation.addressParts.addressPart) {
+
+  //               const addressParts = Array.isArray(address.translations.translation.addressParts.addressPart) ?
+  //                 address.translations.translation.addressParts.addressPart :
+  //                 [address.translations.translation.addressParts.addressPart];
+
+  //               // Join address parts or find city part
+  //               const cityPart = addressParts.find(part =>
+  //                 part.type && part.type.$t === 'CITY');
+
+  //               if (cityPart) {
+  //                 cityOrAddress = cityPart.value;
+  //               } else {
+  //                 cityOrAddress = addressParts.map(part => part.value).join(', ');
+  //               }
+  //             }
+  //           }
+
+  //           // Create an object to store remarks information
+  //           let remarksObj = {};
+
+  //           // Get title information
+  //           if (entity.generalInfo && entity.generalInfo.title && entity.generalInfo.title.$t) {
+  //             remarksObj["Title"] = entity.generalInfo.title.$t;
+  //           }
+
+  //           // Get sanctions list information
+  //           if (entity.sanctionsLists && entity.sanctionsLists.sanctionsList) {
+  //             const sanctionsListArray = Array.isArray(entity.sanctionsLists.sanctionsList)
+  //               ? entity.sanctionsLists.sanctionsList
+  //               : [entity.sanctionsLists.sanctionsList];
+
+  //             sanctionsListArray.forEach(list => {
+  //               if (list.$t) {
+  //                 const datePublished = list.datePublished ? ` (Published: ${list.datePublished})` : '';
+  //                 remarksObj["SanctionsList"] = `${list.$t}${datePublished}`;
+  //               }
+  //             });
+  //           }
+
+  //           // Get sanctions program information
+  //           if (entity.sanctionsPrograms && entity.sanctionsPrograms.sanctionsProgram) {
+  //             const sanctionsProgramArray = Array.isArray(entity.sanctionsPrograms.sanctionsProgram)
+  //               ? entity.sanctionsPrograms.sanctionsProgram
+  //               : [entity.sanctionsPrograms.sanctionsProgram];
+
+  //             sanctionsProgramArray.forEach(program => {
+  //               if (program.$t) {
+  //                 remarksObj["SanctionsProgram"] = program.$t;
+  //               }
+  //             });
+  //           }
+
+  //           // Get sanctions type information
+  //           if (entity.sanctionsTypes && entity.sanctionsTypes.sanctionsType) {
+  //             const sanctionsTypeArray = Array.isArray(entity.sanctionsTypes.sanctionsType)
+  //               ? entity.sanctionsTypes.sanctionsType
+  //               : [entity.sanctionsTypes.sanctionsType];
+
+  //             sanctionsTypeArray.forEach(type => {
+  //               if (type.$t) {
+  //                 remarksObj["SanctionsType"] = type.$t;
+  //               }
+  //             });
+  //           }
+
+  //           // Get legal authority information
+  //           if (entity.legalAuthorities && entity.legalAuthorities.legalAuthority) {
+  //             const legalAuthorityArray = Array.isArray(entity.legalAuthorities.legalAuthority)
+  //               ? entity.legalAuthorities.legalAuthority
+  //               : [entity.legalAuthorities.legalAuthority];
+
+  //             legalAuthorityArray.forEach(authority => {
+  //               if (authority.$t) {
+  //                 remarksObj["LegalAuthority"] = authority.$t;
+  //               }
+  //             });
+  //           }
+
+  //           // Variables to store birthday and date added information
+  //           let birthday = '';
+  //           let dateAdded = '';
+
+  //           // Get birthdate information
+  //           if (entity.features && entity.features.feature) {
+  //             const featureArray = Array.isArray(entity.features.feature)
+  //               ? entity.features.feature
+  //               : [entity.features.feature];
+
+  //             featureArray.forEach(feature => {
+  //               if (feature.type && feature.type.$t === 'Birthdate' && feature.value) {
+  //                 birthday = feature.value;
+  //                 // Birthdate information is not added to remarks
+
+  //                 // Add date range information if available
+  //                 if (feature.valueDate) {
+  //                   const fromDate = feature.valueDate.fromDateBegin || '';
+  //                   const toDate = feature.valueDate.toDateBegin || '';
+  //                   const isApproximate = feature.valueDate.isApproximate === 'true' ? ' (Approximate)' : '';
+
+  //                   if (fromDate && toDate && fromDate === toDate) {
+  //                     // Birthdate range information is not added to remarks
+  //                   } else if (fromDate && toDate) {
+  //                     // Birthdate range information is not added to remarks
+  //                   }
+  //                 }
+  //               }
+  //             });
+  //           }
+
+  //           // Get date added information from sanctions list
+  //           if (entity.sanctionsLists && entity.sanctionsLists.sanctionsList) {
+  //             const sanctionsListArray = Array.isArray(entity.sanctionsLists.sanctionsList)
+  //               ? entity.sanctionsLists.sanctionsList
+  //               : [entity.sanctionsLists.sanctionsList];
+
+  //             if (sanctionsListArray.length > 0 && sanctionsListArray[0].datePublished) {
+  //               dateAdded = sanctionsListArray[0].datePublished;
+  //               // Date added information is not added to remarks
+  //             }
+  //           }
+
+  //           // Format remarks in a more readable way
+  //           let remarksStr = '';
+  //           for (const key in remarksObj) {
+  //             if (remarksStr) remarksStr += ' | ';
+  //             remarksStr += `${key}: ${remarksObj[key]}`;
+  //           }
+
+  //           const record = {
+  //             reference: entityId,
+  //             full_names: fullNames, // Array of all full names including aliases
+  //             country: country,
+  //             entity_type: entityType,
+  //             comments: remarksStr, // More readable format
+  //             birth_year: this.calculateBirthYear(birthday), // Add birthday as a separate field
+  //             listed: new Date(dateAdded).getTime(), // Add date added as a separate field
+  //             source: 'OFAC'
+  //           };
+
+  //           list.push(record);
+  //         } catch (entityError) {
+  //           console.error("Error processing OFAC entity:", entityError);
+  //         }
+  //       });
+  //     }
+  //   } catch (error) {
+  //     console.error("Error processing OFAC data:", error);
+  //     throw error;
+  //   }
+
+  //   return this.hashList(list);
+  // }
 
   async parseSanctionList(source, data) {
     switch (source) {
@@ -656,10 +656,10 @@ export default class SanctionListManager {
         return this.parseS26A(data);
       case "s28A":
         return this.parseS28A(data);
-      case "EUFinancialSanctions":
-        return this.parseEUFinancialSanctions(data);
-      case "OFAC":
-        return this.parseOFAC(data);
+      // case "EUFinancialSanctions":
+      //   return this.parseEUFinancialSanctions(data);
+      // case "OFAC":
+      //   return this.parseOFAC(data);
     }
   }
 
@@ -1078,11 +1078,11 @@ export default class SanctionListManager {
   }
 
   async enabledAccountableInstitutions(screeningMustBeEnabled = false) {
-    if(screeningMustBeEnabled) {
-      let institutions = await this.db.collection('AccountableInstitution').find({ enabledScreening : true }).project({ "enabledScreening":1, "regName" : 1, "remedialActionUsers" : 1 }).toArray();
+    if (screeningMustBeEnabled) {
+      let institutions = await this.db.collection('AccountableInstitution').find({ enabledScreening: true }).project({ "enabledScreening": 1, "regName": 1, "remedialActionUsers": 1 }).toArray();
       return institutions;
     } else {
-      let institutions = await this.db.collection('AccountableInstitution').find({}).project({ "enabledScreening":1, "regName" : 1, "remedialActionUsers" : 1 }).toArray();
+      let institutions = await this.db.collection('AccountableInstitution').find({}).project({ "enabledScreening": 1, "regName": 1, "remedialActionUsers": 1 }).toArray();
       return institutions;
     }
   }

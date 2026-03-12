@@ -8818,6 +8818,62 @@
     "md5": "5b34623bc837d53c5fbc7594286f8532"
   },
   {
+    "reference": "SDi.007",
+    "full_names": [
+      "GEDO HAMDAN"
+    ],
+    "entity_type": "Individual",
+    "country": "Sudan",
+    "comments": "Gender: Male.",
+    "designation": "Commander for the North Darfur section of the Rapid Support Forces",
+    "listed": 1771891200000,
+    "source": "s28A",
+    "birth_year": null,
+    "md5": "c633aec02fa3735e5e717ea0d4637204"
+  },
+  {
+    "reference": "SDi.008",
+    "full_names": [
+      "ABDUL RAHIM"
+    ],
+    "entity_type": "Individual",
+    "country": "Sudan",
+    "comments": "Gender: Male. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Rapid Support Forces &amp;&amp;#35;40;RSF&amp;&amp;#35;41; Deputy Leader",
+    "listed": 1771891200000,
+    "source": "s28A",
+    "birth_year": null,
+    "md5": "ad082ca05a76a6b6a6e4f98bb3593bcf"
+  },
+  {
+    "reference": "SDi.009",
+    "full_names": [
+      "AL-FATEH ABDULLAH"
+    ],
+    "entity_type": "Individual",
+    "country": "Sudan",
+    "comments": "Gender: Male",
+    "designation": "Brigadier General of Rapid Support Forces",
+    "listed": 1771891200000,
+    "source": "s28A",
+    "birth_year": null,
+    "md5": "c699c74927f7816aac553c75c83769c0"
+  },
+  {
+    "reference": "SDi.010",
+    "full_names": [
+      "TIJANI IBRAHIM"
+    ],
+    "entity_type": "Individual",
+    "country": "Sudan",
+    "comments": "Gender: Male",
+    "designation": "Field Commander of the Rapid Support Forces",
+    "listed": 1771891200000,
+    "source": "s28A",
+    "birth_year": null,
+    "md5": "4ccf71f9b5bae238a8f2aa38a43ae051"
+  },
+  {
     "reference": "SOi.001",
     "full_names": [
       "Yasin Ali",
@@ -9424,25 +9480,27 @@
     "entity_type": "Individual",
     "country": "Afghanistan",
     "comments": "A close associate of Mullah Mohammed Omar &amp;&amp;#35;40;TAi.004&amp;&amp;#35;41;. Member of Taliban\nSupreme Council as at Dec. 2009. Belongs to Kakar tribe. Review pursuant to Security\nCouncil resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 21 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "First Deputy, Council of Ministers under the Taliban regime\nForeign Minister under the Taliban regime\nGovernor of Kandahar under the Taliban regime\nPolitical Advisor of Mullah Mohammed Omar",
+    "designation": "First Deputy, Council of Ministers under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;\nForeign Minister under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;\nGovernor of Kandahar under the Taliban regime&amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;\nPolitical Advisor of Mullah Mohammed Omar",
     "listed": 980380800000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "5de3a2a1187ae6354a2f9cbf8cbe3611"
+    "md5": "a7c311f20afac121c7637d886f10acbe"
   },
   {
     "reference": "TAi.003",
     "full_names": [
-      "ABDUL KABIR MOHAMMAD JAN"
+      "ABDUL KABIR MOHAMMAD JAN",
+      "A. Kabir",
+      "ABDUL KABIR MUHAMMAD JAN"
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Active in terrorist operations in Eastern Afghanistan. Collects money\nfrom drug traffickers. Believed to be in Afghanistan/Pakistan border area. Member of the\nTaliban Supreme Council as at 2009. Family is originally from Neka District, Paktia\nProvince, Afghanistan. Responsible for attack on Afghan parliamentarians in November\n2007 in Baghlan; owns land in central Baghlan Province. Belongs to Zadran tribe. Review\npursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 23 Jul.\n2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Second Deputy, Economic Affairs, Council of Ministers under the Taliban\nregime\nGovernor of Nangarhar Province under the Taliban regime\nHead of Eastern Zone under the Taliban regime",
+    "comments": "Active in terrorist operations in Eastern Afghanistan. Collects money from drug traffickers. Member of the Taliban Supreme Council as at 2009. Family is originally from Neka District, Paktia Province, Afghanistan. Responsible for attack on Afghan parliamentarians in November 2007 in Baghlan; owns land in central Baghlan Province. Belongs to Zadran tribe. Height 185cm. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 23 Jul. 2010.  INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Second Deputy, Economic Affairs, Council of Ministers under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;\nGovernor of Nangarhar Province under the Taliban regime&amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;\nHead of Eastern Zone under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 980380800000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "34dfecdcadaef750cb345d496a9b5a4e"
+    "md5": "9e7c49b6be8542bbf1e650dcff69fa8c"
   },
   {
     "reference": "TAi.004",
@@ -9498,12 +9556,12 @@
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Taliban Shadow Governor for Logar Province as of late 2012. Believed to\nbe in Afghanistan/Pakistan border area. Belongs to Sahak tribe &amp;&amp;#35;40;Ghilzai&amp;&amp;#35;41;. Review\npursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 27 Jul.\n2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Minister of Agriculture under the Taliban regime",
+    "comments": "Taliban Shadow Governor for Logar Province as of late 2012. Belongs to Sahak tribe &amp;&amp;#35;40;Ghilzai&amp;&amp;#35;41;. Height 170cm . Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 27 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Minister of Agriculture under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 980899200000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "1a05b384fe5da5aeb26ab22a021c30f3"
+    "md5": "9f670bfbe5d011a953a5bf802a40fa72"
   },
   {
     "reference": "TAi.008",
@@ -9691,16 +9749,17 @@
     "full_names": [
       "FAZL MOHAMMAD MAZLOOM",
       "Molah Fazl",
-      "Fazel Mohammad Mazloom"
+      "Fazel Mohammad Mazloom",
+      "MOHAMMAD FADEL AAKHUND"
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 23 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Deputy Chief of Army Staff of the Taliban regime",
+    "comments": "Missing left leg since 1996. Serious injury on his right foot . Height 168 cm . Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 23 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Deputy Chief of Army Staff of the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 982886400000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "10561021fde1f344204b68fb0c23cfda"
+    "md5": "83913d63fff01e1f1e75a9b7fa5ec276"
   },
   {
     "reference": "TAi.024",
@@ -9711,12 +9770,12 @@
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Arrested in Feb. 2010 and in custody in Pakistan. Extradition request to\nAfghanistan pending in Lahore High Court, Pakistan as of June 2011. Belongs to Popalzai\ntribe. Senior Taliban military commander and member of Taliban Quetta Council as of May\n2007. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 1 Jun.\n2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Deputy Minister of Defence under the Taliban regime",
+    "comments": "Belongs to Popalzai tribe. Senior Taliban military commander and member of Taliban Quetta Council as of May 2007. Height 173cm. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 1 Jun. 2010.  INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Deputy Minister of Defence under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 982886400000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "ee561b568b2003434c66c94a683b3a0c"
+    "md5": "56395150a1044dcd7b7820d88f94d20f"
   },
   {
     "reference": "TAi.025",
@@ -9735,32 +9794,35 @@
   {
     "reference": "TAi.026",
     "full_names": [
-      "AMIR KHAN MOTAQI"
+      "AMIR KHAN MOTAQI",
+      "Amir Khan Muttaqi",
+      "AMIR KHAN MUTAQI"
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Member of the Taliban Supreme Council as at June 2007. Believed to be in\nAfghanistan/Pakistan border area. Belongs to Sulaimankhel tribe. Review pursuant to\nSecurity Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 21 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Minister of Education under the Taliban regime\nTaliban representative in UN-led talks under the Taliban\nregime",
+    "comments": "Member of the Taliban Supreme Council as of June 2007. Believed to be in Afghanistan/Pakistan border area. Belongs to Sulaimankhel tribe. Height 170 cm.  Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 21 Jul. 2010.  INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Minister of Education under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;\nTaliban representative in UN-led talks under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 980380800000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "ec6da9a698b1a4200094a76d0595b7e2"
+    "md5": "caeeb0bb1c1d84698279a28764df1c22"
   },
   {
     "reference": "TAi.027",
     "full_names": [
       "ABDUL SALAM HANAFI",
       "Abdussalam Hanifi",
-      "Hanafi Saheb"
+      "Hanafi Saheb",
+      "ABDUL SALAM HANAFI"
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Taliban member responsible for Jawzjan Province in Northern Afghanistan\nuntil 2008. Involved in drug trafficking. Believed to be in Afghanistan/Pakistan border\narea. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 1 Jun.\n2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Deputy Minister of Education under the Taliban regime",
+    "comments": "Taliban member responsible for Jawzjan Province in Northern Afghanistan until 2008. Involved in drug trafficking. Height 178 cm. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 1 Jun. 2010.  INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Deputy Minister of Education under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 982886400000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "ec1f66361f92e8d0821ee8179c89a2e3"
+    "md5": "ce2054df1d6742e63da9fd43b248250b"
   },
   {
     "reference": "TAi.028",
@@ -9853,16 +9915,18 @@
   {
     "reference": "TAi.038",
     "full_names": [
-      "ABDUL BAQI BASIR"
+      "ABDUL BAQI BASIR",
+      "Abdul Baqi",
+      "ABDUL BAQI HAQQANI"
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Believed to be in Afghanistan/Pakistan border area. Taliban member\nresponsible for Nangarhar Province as at 2008. Until 7 Sep. 2007 he was also listed\nunder number TAi.048. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was\nconcluded on 1 Jun. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Governor of Khost and Paktika provinces under the Taliban\nregime\nVice-Minister of Information and Culture under the Taliban\nregime\nConsular Department, Ministry of Foreign Affairs under the Taliban\nregime",
+    "comments": "Taliban member responsible for Nangarhar Province as at 2008. Until 7 Sep. 2007 he was also listed under number TAi.048. Height 175 cm.  Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 1 Jun. 2010.  INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Governor of Khost and Paktika provinces under the Taliban regime  &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;\nVice-Minister of Information and Culture under the Taliban regime  &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;\nConsular Department, Ministry of Foreign Affairs under the Taliban regime  &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 982886400000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "43d4ec0f44beb4681b4f62f1e4d87ab1"
+    "md5": "c7de9a3c86f699cf69a79f6b71c1e1da"
   },
   {
     "reference": "TAi.039",
@@ -9914,16 +9978,17 @@
     "full_names": [
       "DIN MOHAMMAD HANIF",
       "Qari Din Mohammad",
-      "Iadena Mohammad"
+      "Iadena Mohammad",
+      "IADENAMOHAMMAD NAZRI MOHAMMAD"
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Member of Taliban Supreme Council responsible for Takhar and Badakhshan provinces. Believed to be in Afghanistan/Pakistan border area. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 27 Jul. 2010. Picture available for inclusion in the INTERPOL-UN Security Council Special Notice. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "a&amp;&amp;#35;41; Minister of Planning under the Taliban regime b&amp;&amp;#35;41; Minister of Higher\nEducation under the Taliban regime",
+    "comments": "Member of Taliban Supreme Council responsible for Takhar and Badakhshan provinces. Height 172cm. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 27 Jul. 2010. Picture available for inclusion in the INTERPOL-UN Security Council Special Notice.  INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Minister of Planning under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;\nMinister of Higher Education under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 980380800000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "26e72c06546db4e1a89d73f7fa45269a"
+    "md5": "38d2cca2a8df066e9b099905636f99ab"
   },
   {
     "reference": "TAi.044",
@@ -9946,12 +10011,12 @@
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Member of Taliban Supreme Council and member of Taliban Cultural\nCommission as at 2010. Believed to be in Afghanistan/Pakistan border area. Review\npursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 21 Jul.\n2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Minister of Information under the Taliban regime",
+    "comments": "Member of Taliban Supreme Council and member of Taliban Cultural Commission as at 2010. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 21 Jul. 2010.  INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Minister of Information under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 980380800000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "3532c601b98ce434acfb040244aa0c14"
+    "md5": "673de947bb53ef2b9d513a27a79fbb48"
   },
   {
     "reference": "TAi.049",
@@ -10029,16 +10094,17 @@
     "reference": "TAi.058",
     "full_names": [
       "NOORUDDIN TURABI",
-      "Noor ud Din Turabi"
+      "Noor ud Din Turabi",
+      "MULLAH NOORDIN TORABI"
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Deputy to Mullah Mohammed Omar &amp;&amp;#35;40;TAi.004&amp;&amp;#35;41;. Review pursuant to Security\nCouncil resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 21 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Minister of Justice under the Taliban regime",
+    "comments": "Deputy to Mullah Mohammed Omar &amp;&amp;#35;40;TAi.004&amp;&amp;#35;41;. Height 165cm . Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 21 Jul. 2010.  INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Minister of Justice under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 980380800000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "1cad8117d8451aa4c1aa5f6bad9dfec2"
+    "md5": "fc16276ff44b9b6dc11a40128fa774ef"
   },
   {
     "reference": "TAi.060",
@@ -10047,12 +10113,12 @@
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Belongs to Nurzai tribe. Review pursuant to Security Council resolution\n1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 27 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Minister of Water, Sanitation and Electricity under the Taliban\nregime",
+    "comments": "Belongs to Nurzai tribe. Height 185cm.  Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 27 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Minister of Water, Sanitation and Electricity under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 980380800000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "3e82c7f2f38a1bbd73562a64446a07f4"
+    "md5": "17376f4cd54aba703e297b3c05a5d82a"
   },
   {
     "reference": "TAi.063",
@@ -10156,16 +10222,18 @@
   {
     "reference": "TAi.071",
     "full_names": [
-      "NAJIBULLAH HAQQANI"
+      "NAJIBULLAH HAQQANI",
+      "Najibullah Haqani",
+      "NAJEEBULLAH HAYAT"
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Cousin of Moulavi Noor Jalal. Grandfather’s name is Salam. Taliban member\nresponsible for Laghman Province as of late 2010. Believed to be in Afghanistan/Pakistan\nborder area. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on\n1 Jun. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Deputy Minister of Finance under the Taliban regime",
+    "comments": "Cousin of Moulavi Noor Jalal. Grandfather’s name is Salam. Taliban member\nresponsible for Laghman Province as of late 2010. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 1 Jun. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Deputy Minister of Finance under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 982886400000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "16cc1bfb370c054d97adf4183a1eda99"
+    "md5": "dc7e1ce0eba4627973c31b9d246d4b6e"
   },
   {
     "reference": "TAi.072",
@@ -10262,16 +10330,17 @@
     "full_names": [
       "ABDUL-HAQ WASSIQ",
       "Abdul-Haq Wasseq",
-      "Abdul Haq Wasiq"
+      "Abdul Haq Wasiq",
+      "ABDULHAQ WASEEQ"
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 27 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Deputy Minister of Security &amp;&amp;#35;40;Intelligence&amp;&amp;#35;41; under the Taliban\nregime",
+    "comments": "Height 168cm. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 27 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Deputy Minister of Security &amp;&amp;#35;40;Intelligence&amp;&amp;#35;41; under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 980899200000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "b371a173ba4e6c3dff922451aa886ec2"
+    "md5": "327da261066a4bb4ec083675b88f4d8f"
   },
   {
     "reference": "TAi.083",
@@ -10396,16 +10465,17 @@
     "full_names": [
       "KHAIRULLAH KHAIRKHWAH",
       "Mullah Khairullah Khairkhwah",
-      "Khirullah Said Wali Khairkhwa, born in Kandahar on 01 Jan.1967"
+      "Khirullah Said Wali Khairkhwa, born in Kandahar on 01 Jan.1967",
+      "KHIRULLAH KHAIRKHWA"
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Belongs to Popalzai tribe. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 23 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Governor of Herat Province under the Taliban regime\nSpokesperson of the Taliban regime\nGovernor of Kabul province under the Taliban regime\nMinister of Internal Affairs under the Taliban regime",
+    "comments": "Belongs to Popalzai tribe. Height 176 cm.  Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 23 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Governor of Herat Province under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;\nSpokesperson of the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;\nGovernor of Kabul province under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;\nMinister of Internal Affairs under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 980380800000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "28387bd806d03c2c564b0fa140426af6"
+    "md5": "ef8c6985423034a4c1995d2b3bbce7a8"
   },
   {
     "reference": "TAi.094",
@@ -10651,12 +10721,12 @@
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Member of Taliban Supreme Council and Head of Taliban Religious\nCommittee. Belongs to Ahmadzai tribe. Review pursuant to Security Council resolution\n1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 23 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Chief Justice of Supreme Court under the Taliban regime",
+    "comments": "Member of Taliban Supreme Council and Head of Taliban Religious Committee. Belongs to Ahmadzai tribe. Height 175cm. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 23 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Chief Justice of Supreme Court under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 980380800000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "8de9d6f71828ea70e047f694188c594f"
+    "md5": "0ae074fdbf35921b0b76971ebff3a6d7"
   },
   {
     "reference": "TAi.111",
@@ -10708,16 +10778,17 @@
     "full_names": [
       "HAMIDULLAH AKHUND",
       "Janat Gul",
-      "Hamidullah Akhund"
+      "Hamidullah Akhund",
+      "SAEED HAMIDULLAH"
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Belongs to Ghilzai tribe. Review pursuant to Security Council resolution\n1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 21 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Head of Ariana Afghan Airlines under the Taliban regime",
+    "comments": "Belongs to Ghilzai tribe. Height: 175cm. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 21 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Head of Ariana Afghan Airlines under the Taliban regime &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 980380800000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "5bbc88874bf49a951c4def6d69d88fcf"
+    "md5": "fed9f656e658a383a9e60c7d5f359f26"
   },
   {
     "reference": "TAi.119",
@@ -10740,12 +10811,12 @@
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Belongs to Hotak tribe. Review pursuant to Security Council resolution\n1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 29 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Third Secretary, Taliban Embassy, Abu Dhabi, United Arab\nEmirates",
+    "comments": "Belongs to Hotak tribe. Height 169cm. Review pursuant to Security Council resolution\n1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 29 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Third Secretary, Taliban Embassy, Abu Dhabi, United Arab Emirates &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 980380800000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "eac65550f7dd5e3a5ee3f737c8f5bd55"
+    "md5": "e0fe13d5f4c62f551bcd63b704db9a46"
   },
   {
     "reference": "TAi.122",
@@ -11000,16 +11071,17 @@
       "Siraj Haqqani",
       "Serajuddin Haqani",
       "Siraj Haqani",
-      "Saraj Haqani"
+      "Saraj Haqani",
+      "ABDUL SATAR ABDULLAH"
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Heading the Haqqani Network &amp;&amp;#35;40;TAe.012&amp;&amp;#35;41; as of late 2012. Son of Jalaluddin\nHaqqani &amp;&amp;#35;40;TAi.040&amp;&amp;#35;41;. Belongs to Sultan Khel section, Zadran tribe of Garda Saray of Paktia\nprovince, Afghanistan. Believed to be in the Afghanistan/Pakistan border area. Review\npursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 27 Jul.\n2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "designation": "Na&apos;ib Amir &amp;&amp;#35;40;Deputy Commander&amp;&amp;#35;41;",
+    "comments": "Heading the Haqqani Network &amp;&amp;#35;40;TAe.012&amp;&amp;#35;41; as of late 2012. Son of Jalaluddin Haqqani &amp;&amp;#35;40;TAi.040&amp;&amp;#35;41;. Belongs to Sultan Khel section, Zadran tribe of Garda Saray of Paktia province, Afghanistan. Height 187cm. Review pursuant to Security Council resolution 1822 &amp;&amp;#35;40;2008&amp;&amp;#35;41; was concluded on 27 Jul. 2010. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "designation": "Na&apos;ib Amir &amp;&amp;#35;40;Deputy Commander&amp;&amp;#35;41; &amp;&amp;#35;40;1996-2001&amp;&amp;#35;41;",
     "listed": 1189641600000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "a529fb082035c5cfa8dc8ae5f4a7707c"
+    "md5": "dd7b952c72b8eb381904b9c98a47d779"
   },
   {
     "reference": "TAi.145",
@@ -11049,16 +11121,19 @@
     "full_names": [
       "GUL AGHA",
       "Mullah Gul Agha",
-      "Mullah Gul Agha Akhund"
+      "Mullah Gul Agha Akhund",
+      "HIDAYATULLAH BADRI",
+      "HEDAYATULLAH HEDAYAT",
+      "HEDAYATULLAH BADRI"
     ],
     "entity_type": "Individual",
-    "country": "",
-    "comments": "Member of a Taliban Council that coordinates the collection of zakat\n&amp;&amp;#35;40;Islamic tax&amp;&amp;#35;41; from Baluchistan Province, Pakistan. Head of Taliban Financial Commission\nas at mid-2013. Associated with Mullah Mohammed Omar &amp;&amp;#35;40;TAi.004&amp;&amp;#35;41;. Served as Omar&apos;s\nprincipal finance officer and one of his closest advisors. Belongs to Ishaqzai\ntribe. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "country": "Afghanistan",
+    "comments": "Member of a Taliban Council that coordinates the collection of zakat &amp;&amp;#35;40;Islamic tax&amp;&amp;#35;41; from Baluchistan Province, Pakistan. Head of Taliban Financial Commission as at mid-2013. Associated with Mullah Mohammed Omar &amp;&amp;#35;40;TAi.004&amp;&amp;#35;41;. Served as Omar&apos;s principal finance officer and one of his closest advisors. Belongs to Ishaqzai tribe. Height: 156cm. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
     "designation": null,
     "listed": 1279584000000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "b777d3e25ea1b5d0fcc478b41de9328b"
+    "md5": "1c892fbf79371ab84fc3ec08d447969d"
   },
   {
     "reference": "TAi.148",
@@ -11139,12 +11214,12 @@
     ],
     "entity_type": "Individual",
     "country": "Afghanistan",
-    "comments": "Taliban financier. Owns businesses in Japan and frequently travels to\nDubai, United Arab Emirates, and Japan. As of 2009, facilitated Taliban activities,\nincluding through recruitment and the provision of logistical support. Believed to be in\nthe Afghanistan/Pakistan border area. Belongs to Noorzai tribe. Brother of Faizullah\nKhan Noorzai &amp;&amp;#35;40;TAi.153&amp;&amp;#35;41;. Father’s name is Haji Akhtar Muhammad. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "comments": "Taliban financier. Owns businesses in Japan and frequently travels to Dubai, United Arab Emirates, and Japan. As of 2009, facilitated Taliban activities, including through recruitment and the provision of logistical support. Belongs to Noorzai tribe. Brother of Faizullah Khan Noorzai &amp;&amp;#35;40;TAi.153&amp;&amp;#35;41;. Father’s name is Haji Akhtar Muhammad. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
     "designation": null,
     "listed": 1317686400000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "20e1cacd025b9a7b70b360bf6728b3e3"
+    "md5": "4f75a47b8a417eecdf7e941927c1728f"
   },
   {
     "reference": "TAi.155",
@@ -11166,16 +11241,17 @@
       "AHMAD ZIA",
       "Zia Agha",
       "Noor Ahmad",
-      "Noor Ahmed"
+      "Noor Ahmed",
+      "NOOR AHMAD AGHA"
     ],
     "entity_type": "Individual",
-    "country": "",
-    "comments": "Senior Taliban official with military and financial responsibilities as\nat 2011. Leader of the Taliban’s Military Council as of 2010. In 2008 and 2009, served\nas a Taliban finance officer and distributed money to Taliban commanders in\nAfghanistan/Pakistan border area. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+    "country": "Afghanistan",
+    "comments": "Senior Taliban official with military and financial responsibilities as at 2011. Leader of the Taliban’s Military Council as of 2010. In 2008 and 2009, served as a Taliban finance officer and distributed money to Taliban commanders in Afghanistan/Pakistan border area. Height: 180cm.  INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
     "designation": null,
     "listed": 1325808000000,
     "source": "s28A",
     "birth_year": null,
-    "md5": "49b1b2e271253e277bee07dd640f74a0"
+    "md5": "2c49456ff0206e14e237f47a1015399e"
   },
   {
     "reference": "TAi.157",
@@ -14973,28 +15049,6 @@
     "source": "s28A",
     "birth_year": null,
     "md5": "5548d3402fd8017d28000a4c24ea3bd4"
-  },
-  {
-    "reference": "QDe.137",
-    "full_names": [
-      "AL-NUSRAH FRONT FOR THE PEOPLE OF THE LEVANT",
-      "Hay’at Tahrir al-Sham &amp;&amp;#35;40;HTS&amp;&amp;#35;41; &amp;&amp;#35;40;هيئة تحرير الشام &amp;&amp;#35;40;original script&amp;&amp;#35;41;; Hay’at Tahrir al-Sham; Hay’et Tahrir al-Sham; Hayat Tahrir al-Sham; Assembly for the Liberation of Syria; Assembly for the Liberation of the Levant; Liberation of al-Sham Commission; Liberation of the Levant Organisation Tahrir al-Sham; Tahrir al-Sham Hay’at&amp;&amp;#35;41;",
-      "جبهة النصرة &amp;&amp;#35;40;the Victory Front; Jabhat al-Nusrah; Jabhet al-Nusra; Al-Nusrah Front; Al-Nusra Front&amp;&amp;#35;41;",
-      "جبهة فتح الشام &amp;&amp;#35;40;Jabhat Fath al Sham; Jabhat Fath al-Sham; Jabhat Fatah al-Sham; Jabhat Fateh Al-Sham; Fatah al-Sham Front; Fateh al-Sham Front&amp;&amp;#35;41;",
-      "Conquest of the Levant Front",
-      "The Front for the Liberation of al Sham",
-      "Front for the Conquest of Syria/the Levant",
-      "Front for the Liberation of the Levant",
-      "Front for the Conquest of Syria",
-      "شبكة أنصار المجاهدين &amp;&amp;#35;40;Ansar al-Mujahideen Network - sub-unit name&amp;&amp;#35;41;",
-      "مجاهدو الشام في ساحات الجهاد &amp;&amp;#35;40;Levantine Mujahideen on the Battlefields of Jihad - sub-unit name&amp;&amp;#35;41;"
-    ],
-    "entity_type": "Institution",
-    "comments": "Associated with Al-Qaida &amp;&amp;#35;40;QDe.004&amp;&amp;#35;41;. Brought Syrian and foreign Al-Qaida in Iraq\n                &amp;&amp;#35;40;QDe.115&amp;&amp;#35;41; and Asbat al-Ansar &amp;&amp;#35;40;QDe.007&amp;&amp;#35;41; fighters, along with other foreign Al-Qaida\n                operatives, to join local elements in Syrian Arab Republic to carry out terrorist\n                and guerrilla operations there. Previously associated with the Islamic State in Iraq\n                and the Levant &amp;&amp;#35;40;ISIL&amp;&amp;#35;41;, listed as Al-Qaida in Iraq &amp;&amp;#35;40;QDe.115&amp;&amp;#35;41;, and its leader Ibrahim\n                Awwad Ibrahim Ali al-Badri al-Samarrai &amp;&amp;#35;40;QDi.299&amp;&amp;#35;41; but separated from that group in\n                2013. In Jul. 2016, Abu Mohammed Al-Jawlani &amp;&amp;#35;40;QDi.317&amp;&amp;#35;41;, the leader of Al-Nusrah Front\n                for the People of the Levant, announced the group had changed its name to Jabhat\n                Fath al-Sham and was no longer affiliated with any external entity. Despite the\n                announcement and attempts to distinguish itself from Al-Nusrah Front for the People\n                of the Levant, the group remains aligned with Al-Qaida and continues to carry out\n                terrorist operations under this new name. In January 2017, Al-Nusrah Front created\n                Hay’at Tahrir al-Sham &amp;&amp;#35;40;HTS&amp;&amp;#35;41; as a vehicle to advance its position in the Syrian\n                insurgency and further its own goals as Al-Qaida’s affiliate in Syria. Previously\n                listed between 30 May 2013 and 13 May 2014 as an aka of Al-Qaida in Iraq &amp;&amp;#35;40;QDe.115&amp;&amp;#35;41;.\n                Review pursuant to Security Council resolution 2368 &amp;&amp;#35;40;2017&amp;&amp;#35;41; was concluded on 15 November 2021.            \n             INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-    "listed": 1400025600000,
-    "source": "s28A",
-    "birth_year": null,
-    "md5": "656f489954fe55d6f477d04b5fa3c0e0"
   },
   {
     "reference": "QDe.138",
